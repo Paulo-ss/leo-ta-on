@@ -3,26 +3,39 @@
   top: 100%;
   left: 0;
   width: 100%;
+  max-height: 0;
 
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  gap: 1rem;
   align-items: center;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 
   background-color: var(--white);
   color: var(--black);
 
-  animation: open-from-top 0.3s ease forwards;
+  animation: open-from-top 0.5s ease-out forwards;
+}
+
+.dropdown.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dropdown.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dropdown.col-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @keyframes open-from-top {
   from {
-    height: 0;
+    max-height: 0rem;
     opacity: 0;
   }
 
   to {
-    height: 12rem;
+    max-height: 20rem;
     opacity: 1;
   }
 }

@@ -10,17 +10,26 @@
   color: var(--white);
 }
 
-.dropdownSingleCol {
-  display: block;
-  padding: 1rem;
-
+/* Itens do dropdown */
+.dropdownItem {
   text-align: center;
 }
 
-.dropdownSingleCol h3 {
+.dropdownItem a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdownItem h2 {
   margin-bottom: 0.8rem;
 }
 
-.dropdownSingleCol + .dropdownSingleCol {
+.dropdownItem p {
+  max-width: 300px;
+}
+
+.dropdownItem + .dropdownItem {
   border-left: 1px solid var(--black);
 }

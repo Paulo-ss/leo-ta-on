@@ -14,7 +14,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ icon, title, children }) => {
 
   return (
     <li
-      className={styles.navbarItem}
+      className={`${styles.navbarItem} ${isOpen && styles.active}`}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >

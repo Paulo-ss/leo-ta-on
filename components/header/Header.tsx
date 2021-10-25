@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} shadow-1`}>
       <Container>
         <div className={styles.logo}>
           <h1>LEO TA ON</h1>

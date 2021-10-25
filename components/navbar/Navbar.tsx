@@ -11,362 +11,362 @@ const Navbar: React.FC = () => {
       <Container>
         <ul className={styles.navbarNav}>
           <NavbarItem title="Catálogo de Produtos">
-            <Dropdown>
-              <Link href="/">
-                <a className={styles.dropdownSingleCol}>
-                  <div>
-                    <h3>Catálogos de Produtos</h3>
+            <Dropdown cssGridClass="col-3">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Catálogo de Produtos</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a className={styles.dropdownSingleCol}>
-                  <div>
-                    <h3>Catálogos de Produtos</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Catálogo de Produtos</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a className={styles.dropdownSingleCol}>
-                  <div>
-                    <h3>Catálogos de Produtos</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Catálogo de Produtos</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Experiências">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Experiências</h3>
+            <Dropdown cssGridClass="col-2">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Experiências</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Experiências</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Experiências</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
-
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Experiências</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
-                    </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Articuladores">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Articuladores</h3>
+            <Dropdown cssGridClass="col-4">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Articuladores</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Articuladores</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Articuladores</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Articuladores</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Articuladores</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
+
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Teste</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad, eum.
+                    </p>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Gavetas">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Gavetas</h3>
+            <Dropdown cssGridClass="col-3">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Gavetas</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Gavetas</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Gavetas</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Gavetas</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Gavetas</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Painel Ripado">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Painel Ripado</h3>
+            <Dropdown cssGridClass="col-4">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Painel Ripado</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Painel Ripado</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Painel Ripado</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Painel Ripado</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Painel Ripado</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
+
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Painel Ripado</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad, eum.
+                    </p>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Perfil Prateleira">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Perfil Prateleira</h3>
+            <Dropdown cssGridClass="col-3">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Perfil Prateleira</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Perfil Prateleira</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Perfil Prateleira</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Perfil Prateleira</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Perfil Prateleira</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Tendências">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Tendências</h3>
+            <Dropdown cssGridClass="col-3">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Tendências</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Tendências</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Tendências</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Tendências</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Tendências</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Portfolios MDF">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Portfolios MDF</h3>
+            <Dropdown cssGridClass="col-2">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Portfolios MDF</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Portfolios MDF</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Portfolios MDF</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
-
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Portfolios MDF</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
-                    </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Perfis de Alumínio">
-            <Dropdown>
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Perfis de Alumínio</h3>
+            <Dropdown cssGridClass="col-3">
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Perfis de Alumínio</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Perfis de Alumínio</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Perfis de Alumínio</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
 
-              <Link href="/">
-                <a>
-                  <div className={styles.dropdownSingleCol}>
-                    <h3>Perfis de Alumínio</h3>
+              <div className={styles.dropdownItem}>
+                <Link href="/">
+                  <a>
+                    <h2>Perfis de Alumínio</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit beatae est non id, dignissimos voluptas.
+                      Ad, eum.
                     </p>
-                  </div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
             </Dropdown>
           </NavbarItem>
         </ul>
