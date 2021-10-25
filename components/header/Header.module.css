@@ -1,0 +1,9 @@
+.header {
+  background: var(--primary-color);
+}
+
+.logo {
+  color: var(--white);
+  font-size: 1rem;
+  padding: 1rem;
+}

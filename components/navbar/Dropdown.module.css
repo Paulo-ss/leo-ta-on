@@ -1,0 +1,28 @@
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+
+  background-color: var(--white);
+  color: var(--black);
+
+  animation: open-from-top 0.3s ease forwards;
+}
+
+@keyframes open-from-top {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    height: 12rem;
+    opacity: 1;
+  }
+}
