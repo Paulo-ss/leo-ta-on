@@ -1,0 +1,31 @@
+.navbarMobileItem {
+  display: flex;
+
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.navbarMobileItem + .navbarMobileItem {
+  border-top: 0.5px solid var(--white);
+}
+
+.navbarMobileItem > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 1.3rem;
+
+  color: var(--white);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.navbarMobileItem > div:nth-child(1):hover {
+  background-color: var(--white);
+  color: var(--black);
+}

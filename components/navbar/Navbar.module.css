@@ -33,3 +33,10 @@
 .dropdownItem + .dropdownItem {
   border-left: 1px solid var(--black);
 }
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+}

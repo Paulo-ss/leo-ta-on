@@ -1,0 +1,16 @@
+.slideInMenuItem {
+  width: 100%;
+}
+
+.slideInMenuItem a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--white);
+
+  transition: filter 0.3s ease;
+}
+
+.slideInMenuItem a:hover {
+  filter: brightness(0.9);
+}

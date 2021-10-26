@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
               <div className={styles.dropdownItem}>
                 <Link href="/">
                   <a>
-                    <h2>Teste</h2>
+                    <h2>Articuladores</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Ad, eum.

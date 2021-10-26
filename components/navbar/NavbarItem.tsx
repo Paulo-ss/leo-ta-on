@@ -3,7 +3,7 @@ import styles from "./NavbarItem.module.css";
 import Link from "next/link";
 
 interface NavbarItemProps {
-  icon?: React.ReactNode;
+  icon?: HTMLOrSVGElement;
   title: string;
   children: React.ReactNode;
 }
