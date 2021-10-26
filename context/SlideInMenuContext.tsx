@@ -19,7 +19,7 @@ const SlideInMenuProvider = ({ children }: SlideInMenuProviderProps) => {
   const [openSlideInMenu, setOpenSlideInMenu] = useState(false);
 
   const toggleSlideInMenu = () => {
-    setOpenSlideInMenu((state) => !state);
+    setOpenSlideInMenu(!openSlideInMenu);
   };
 
   return (

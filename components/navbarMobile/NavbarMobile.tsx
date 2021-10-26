@@ -39,17 +39,16 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
 
   return (
     <div className={styles.blackBg} onClick={handleClickOutside}>
+      {/* Botão para fechar a navbar mobile */}
+      <div
+        className={`${styles.closeNavBtn} shadow-3`}
+        onClick={toggleNavbarMobile}
+        title="Fechar menu"
+      >
+        <span></span>
+        <span></span>
+      </div>
       <nav className={`${styles.navbarMobile} shadow-3`}>
-        {/* Botão para fechar a navbar mobile */}
-        <div
-          className={styles.closeNavBtn}
-          onClick={toggleNavbarMobile}
-          title="Fechar menu"
-        >
-          <span></span>
-          <span></span>
-        </div>
-
         <ul className={styles.navbarNavMobile}>
           <SlideInMenuProvider>
             <NavbarMobileItem title="Catálogo de Produtos">
