@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import Container from "../layout/Container";
 import Dropdown from "./Dropdown";
 import styles from "./Navbar.module.css";
@@ -6,8 +6,33 @@ import NavbarItem from "./NavbarItem";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
+  // Ref da navbar
+  const navbarRef = useRef<HTMLElement>(null);
+
+  // LayoutEffect para fixar a navbar quando
+  // ela for sair da tela
+  useLayoutEffect(() => {
+    const navbarPosition = navbarRef.current?.offsetTop;
+
+    const onScroll = () => {
+      const scrollPosition = window.pageYOffset;
+
+      if (navbarPosition && scrollPosition > navbarPosition) {
+        navbarRef.current.classList.add("fixedNav");
+      } else {
+        navbarRef.current?.classList.remove("fixedNav");
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} ref={navbarRef}>
       <Container>
         <ul className={styles.navbarNav}>
           <NavbarItem title="Catálogo de Produtos">
