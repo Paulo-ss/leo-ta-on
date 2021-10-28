@@ -1,19 +1,28 @@
-import React, { useContext } from "react";
-import { SlideInMenuContext } from "../../context/SlideInMenuContext";
+import React, { useState } from "react";
 import styles from "./NavbarMobileItem.module.css";
-
+import SlideInMenu from "./SlideInMenu";
+import SlideInMenuItem from "./SlideInMenuItem";
+interface SlideInMenuItemObj {
+  title: string;
+  href: string;
+}
 interface NavbarMobileItemProps {
   icon?: HTMLOrSVGElement;
   title: string;
-  children: React.ReactNode;
+  slideInMenuItems: SlideInMenuItemObj[];
 }
 
 const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
   icon,
   title,
-  children,
+  slideInMenuItems,
 }) => {
-  const { toggleSlideInMenu } = useContext(SlideInMenuContext);
+  // Estado para controlar o slide do menu
+  const [openSlideInMenu, setOpenSlideInMenu] = useState(false);
+
+  const toggleSlideInMenu = () => {
+    setOpenSlideInMenu(!openSlideInMenu);
+  };
 
   return (
     <>
@@ -27,7 +36,13 @@ const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
           <span>➜</span>
         </div>
 
-        {children}
+        {openSlideInMenu && (
+          <SlideInMenu toggleSlideInMenu={toggleSlideInMenu}>
+            {slideInMenuItems.map((item) => (
+              <SlideInMenuItem title={item.title} href={item.href} />
+            ))}
+          </SlideInMenu>
+        )}
       </li>
     </>
   );

@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./NavbarMobile.module.css";
 import NavbarMobileItem from "./NavbarMobileItem";
-import SlideInMenu from "./SlideInMenu";
-import SlideInMenuItem from "./SlideInMenuItem";
-import SlideInMenuProvider from "../../context/SlideInMenuContext";
 
 interface NavbarMobileProps {
   toggleNavbarMobile: () => void;
@@ -50,96 +47,87 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
       </div>
       <nav className={`${styles.navbarMobile} shadow-3`}>
         <ul className={styles.navbarNavMobile}>
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Catálogo de Produtos">
-              <SlideInMenu>
-                <SlideInMenuItem title="Todos os Catálogos" href="/" />
-                <SlideInMenuItem title="Catálogo de Ferragens" href="/" />
-                <SlideInMenuItem title="Catálogo de Máquinas" href="/" />
-                <SlideInMenuItem title="Catálogo de Perfis" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Catálogo de Produtos"
+            slideInMenuItems={[
+              { title: "Todos os Catálogos", href: "/" },
+              { title: "Catálogo de Ferrangens", href: "/" },
+              { title: "Catálogo de Máquinas", href: "/" },
+              { title: "Catálogo de Perfis", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Experiências">
-              <SlideInMenu>
-                <SlideInMenuItem title="Experiências" href="/" />
-                <SlideInMenuItem title="Experiências" href="/" />
-                <SlideInMenuItem title="Experiências" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Experiências"
+            slideInMenuItems={[
+              { title: "Experiências", href: "/" },
+              { title: "Experiências", href: "/" },
+              { title: "Experiências", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Articuladores">
-              <SlideInMenu>
-                <SlideInMenuItem title="Articuladores" href="/" />
-                <SlideInMenuItem title="Articuladores" href="/" />
-                <SlideInMenuItem title="Articuladores" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Articuladores"
+            slideInMenuItems={[
+              { title: "Articuladores", href: "/" },
+              { title: "Articuladores", href: "/" },
+              { title: "Articuladores", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Gavetas">
-              <SlideInMenu>
-                <SlideInMenuItem title="Gavetas" href="/" />
-                <SlideInMenuItem title="Gavetas" href="/" />
-                <SlideInMenuItem title="Gavetas" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Gavetas"
+            slideInMenuItems={[
+              { title: "Gavetas", href: "/" },
+              { title: "Gavetas", href: "/" },
+              { title: "Gavetas", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Painel Ripado">
-              <SlideInMenu>
-                <SlideInMenuItem title="Painel Ripado" href="/" />
-                <SlideInMenuItem title="Painel Ripado" href="/" />
-                <SlideInMenuItem title="Painel Ripado" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Painel Ripado"
+            slideInMenuItems={[
+              { title: "Painel Ripado", href: "/" },
+              { title: "Painel Ripado", href: "/" },
+              { title: "Painel Ripado", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Perfil Prateleira">
-              <SlideInMenu>
-                <SlideInMenuItem title="Perfil Prateleira" href="/" />
-                <SlideInMenuItem title="Perfil Prateleira" href="/" />
-                <SlideInMenuItem title="Perfil Prateleira" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Perfil Prateleira"
+            slideInMenuItems={[
+              { title: "Perfil Prateleira", href: "/" },
+              { title: "Perfil Prateleira", href: "/" },
+              { title: "Perfil Prateleira", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Tendências">
-              <SlideInMenu>
-                <SlideInMenuItem title="Tendências" href="/" />
-                <SlideInMenuItem title="Tendências" href="/" />
-                <SlideInMenuItem title="Tendências" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Tendências"
+            slideInMenuItems={[
+              { title: "Tendências", href: "/" },
+              { title: "Tendências", href: "/" },
+              { title: "Tendências", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Portfolios MDF">
-              <SlideInMenu>
-                <SlideInMenuItem title="Portfolios MDF" href="/" />
-                <SlideInMenuItem title="Portfolios MDF" href="/" />
-                <SlideInMenuItem title="Portfolios MDF" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Portfolios MDF"
+            slideInMenuItems={[
+              { title: "Portfolios MDF", href: "/" },
+              { title: "Portfolios MDF", href: "/" },
+              { title: "Portfolios MDF", href: "/" },
+            ]}
+          />
 
-          <SlideInMenuProvider>
-            <NavbarMobileItem title="Perfis de Alumínio">
-              <SlideInMenu>
-                <SlideInMenuItem title="Perfis de Alumínio" href="/" />
-                <SlideInMenuItem title="Perfis de Alumínio" href="/" />
-                <SlideInMenuItem title="Perfis de Alumínio" href="/" />
-              </SlideInMenu>
-            </NavbarMobileItem>
-          </SlideInMenuProvider>
+          <NavbarMobileItem
+            title="Perfis de Alumínio"
+            slideInMenuItems={[
+              { title: "Perfis de Alumínio", href: "/" },
+              { title: "Perfis de Alumínio", href: "/" },
+              { title: "Perfis de Alumínio", href: "/" },
+            ]}
+          />
         </ul>
       </nav>
     </div>
