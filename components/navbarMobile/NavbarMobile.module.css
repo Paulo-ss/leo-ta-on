@@ -3,9 +3,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-
   background-color: rgba(0, 0, 0, 0.4);
-
   z-index: 1000;
 }
 
@@ -14,10 +12,7 @@
   top: 1rem;
   width: 95%;
   margin: 0 auto;
-  background-color: var(--primary-color);
-
   overflow: hidden;
-
   animation: show-from-top 0.3s ease-out forwards;
 }
 
@@ -33,49 +28,54 @@
 
 .navbarNavMobile {
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
+  background-color: var(--primary-color-4);
   list-style-type: none;
 }
 
 /* Botão para fechar a navbar mobile */
 .closeNavBtn {
   position: relative;
-  top: 0.8rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 40px;
   height: 40px;
-  margin: 1rem;
-
-  background-color: var(--primary-color);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: var(--spacing-4);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: var(--primary-color-4);
   cursor: pointer;
   z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.closeNavBtn:hover {
+  background-color: var(--primary-color-5);
 }
 
 .closeNavBtn span {
-  position: absolute;
-  left: 2px;
-  width: 90%;
+  position: relative;
+  width: 60%;
   height: 2px;
-  background-color: var(--white);
-  transform-origin: center;
+  background-color: var(--white-3);
+  transform-origin: left;
   transition: all 0.2s ease-in;
 }
 
 .closeNavBtn span:nth-child(1) {
-  top: 19px;
+  top: -2px;
+  left: 3px;
   transform: rotate(45deg);
 }
 
 .closeNavBtn span:nth-child(2) {
-  bottom: 19px;
+  bottom: -1px;
+  left: 3px;
   transform: rotate(-45deg);
 }

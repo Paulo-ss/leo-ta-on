@@ -6,11 +6,11 @@
   display: block;
   width: 100%;
   padding: 1rem;
-  background-color: var(--white);
+  background-color: var(--white-2);
 
-  transition: filter 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .slideInMenuItem a:hover {
-  filter: brightness(0.9);
+  background-color: var(--white-3);
 }

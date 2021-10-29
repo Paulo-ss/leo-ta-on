@@ -2,18 +2,14 @@
   display: flex;
   align-items: center;
 
-  padding: 1rem;
+  padding: var(--spacing-5);
   text-align: center;
   height: 5rem;
 
   transition: all 0.5s ease-out;
 }
 
-.navbarItem + .navbarItem {
-  border-left: 1px solid var(--white);
-}
-
 .navbarItem.active {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--white-1);
+  color: var(--black-2);
 }

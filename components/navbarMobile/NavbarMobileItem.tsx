@@ -25,26 +25,24 @@ const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
   };
 
   return (
-    <>
-      <li className={styles.navbarMobileItem}>
-        <div onClick={toggleSlideInMenu}>
-          <div>
-            <span>{icon}</span>
-            <p>{title}</p>
-          </div>
-
-          <span>➜</span>
+    <li className={styles.navbarMobileItem}>
+      <div onClick={toggleSlideInMenu}>
+        <div>
+          <span>{icon}</span>
+          <p>{title}</p>
         </div>
 
-        {openSlideInMenu && (
-          <SlideInMenu toggleSlideInMenu={toggleSlideInMenu}>
-            {slideInMenuItems.map((item) => (
-              <SlideInMenuItem title={item.title} href={item.href} />
-            ))}
-          </SlideInMenu>
-        )}
-      </li>
-    </>
+        <span>➜</span>
+      </div>
+      <SlideInMenu
+        openSlideInMenu={openSlideInMenu}
+        toggleSlideInMenu={toggleSlideInMenu}
+      >
+        {slideInMenuItems.map((item, index) => (
+          <SlideInMenuItem key={index} title={item.title} href={item.href} />
+        ))}
+      </SlideInMenu>
+    </li>
   );
 };
 

@@ -8,7 +8,9 @@ interface DropdownProps {
 
 const Dropdown: React.FC<DropdownProps> = ({ cssGridClass, children }) => {
   return (
-    <div className={`${styles.dropdown} ${styles[cssGridClass]} shadow-2`}>
+    <div
+      className={`${styles.dropdown} ${styles[cssGridClass]} bottom-corners-rounded shadow-2`}
+    >
       {children}
     </div>
   );
