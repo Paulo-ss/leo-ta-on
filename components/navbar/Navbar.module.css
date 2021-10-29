@@ -1,5 +1,5 @@
 .navbar {
-  background: var(--secondary-color);
+  background: var(--primary-color-4);
 }
 
 .navbarNav {
@@ -7,7 +7,7 @@
   align-items: center;
 
   list-style-type: none;
-  color: var(--white);
+  color: var(--white-3);
 }
 
 /* Itens do dropdown */
@@ -31,7 +31,16 @@
 }
 
 .dropdownItem + .dropdownItem {
-  border-left: 1px solid var(--black);
+  border-left: 1px solid var(--black-2);
+}
+
+/* Classe para fixar a nav no topo */
+@media (min-width: 1001px) {
+  .fixedNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 }
 
 /* Estilos responsivos */

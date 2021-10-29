@@ -8,7 +8,7 @@ interface NavbarMobileProps {
 
 const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
   // Função para fechar o menu mobile caso
-  // o usuário clique fora do botão
+  // o usuário clique fora do menu
   const handleClickOutside = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
       toggleNavbarMobile();
@@ -37,15 +37,16 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
   return (
     <div className={styles.blackBg} onClick={handleClickOutside}>
       {/* Botão para fechar a navbar mobile */}
-      <div
+      <button
         className={`${styles.closeNavBtn} shadow-3`}
         onClick={toggleNavbarMobile}
         title="Fechar menu"
       >
         <span></span>
         <span></span>
-      </div>
-      <nav className={`${styles.navbarMobile} shadow-3`}>
+      </button>
+
+      <nav className={`${styles.navbarMobile} all-rounded shadow-3`}>
         <ul className={styles.navbarNavMobile}>
           <NavbarMobileItem
             title="Catálogo de Produtos"

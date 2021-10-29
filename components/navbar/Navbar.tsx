@@ -18,9 +18,9 @@ const Navbar: React.FC = () => {
       const scrollPosition = window.pageYOffset;
 
       if (navbarPosition && scrollPosition > navbarPosition) {
-        navbarRef.current.classList.add("fixedNav");
+        navbarRef.current.classList.add(`${styles.fixedNav}`, "shadow-2");
       } else {
-        navbarRef.current?.classList.remove("fixedNav");
+        navbarRef.current?.classList.remove(styles.fixedNav, "shadow-2");
       }
     };
 

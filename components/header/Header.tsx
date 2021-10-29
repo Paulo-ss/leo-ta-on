@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`${styles.header} shadow-1`}>
+    <header className={`${styles.header} shadow-2`}>
       <Container>
         <div className={styles.headerWrapper}>
           <div className={styles.logo}>
