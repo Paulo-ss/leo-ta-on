@@ -9,7 +9,6 @@
 
 .navbarMobile {
   position: relative;
-  top: 1rem;
   width: 95%;
   margin: 0 auto;
   overflow: hidden;
@@ -45,18 +44,18 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: var(--spacing-4);
+  margin: var(--spacing-4) var(--spacing-3);
   border: none;
   border-radius: 50%;
   outline: none;
-  background-color: var(--primary-color-4);
+  background-color: var(--secondary-color-5);
   cursor: pointer;
   z-index: 1000;
   transition: background-color 0.3s ease;
 }
 
 .closeNavBtn:hover {
-  background-color: var(--primary-color-5);
+  background-color: var(--secondary-color-6);
 }
 
 .closeNavBtn span {
