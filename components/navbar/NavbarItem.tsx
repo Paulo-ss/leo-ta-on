@@ -3,7 +3,7 @@ import styles from "./NavbarItem.module.css";
 import Link from "next/link";
 
 interface NavbarItemProps {
-  icon?: HTMLOrSVGElement;
+  icon: React.ReactNode;
   title: string;
   children: React.ReactNode;
 }
@@ -20,7 +20,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ icon, title, children }) => {
     >
       <Link href="/">
         <a>
-          <span className={styles.navbarItemIcon}>{icon}</span>
+          <span className={styles.icon}>{icon}</span>
           <p>{title}</p>
         </a>
       </Link>

@@ -7,7 +7,7 @@ interface SlideInMenuItemObj {
   href: string;
 }
 interface NavbarMobileItemProps {
-  icon?: HTMLOrSVGElement;
+  icon: React.ReactNode;
   title: string;
   slideInMenuItems: SlideInMenuItemObj[];
 }
@@ -28,7 +28,7 @@ const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
     <li className={styles.navbarMobileItem}>
       <div onClick={toggleSlideInMenu}>
         <div>
-          <span>{icon}</span>
+          <span className={styles.icon}>{icon}</span>
           <p>{title}</p>
         </div>
 

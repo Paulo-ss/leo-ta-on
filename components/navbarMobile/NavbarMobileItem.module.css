@@ -25,3 +25,33 @@
   background-color: var(--white-1);
   color: var(--black-2);
 }
+
+.navbarMobileItem > div:nth-child(1) div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 35px;
+  height: 35px;
+
+  margin-right: var(--spacing-2);
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+
+  fill: var(--white-1);
+
+  transition: fill 0.3s ease-out;
+}
+
+.navbarMobileItem > div:nth-child(1):hover svg {
+  fill: var(--black-2);
+}

@@ -1,6 +1,15 @@
 import React, { useEffect } from "react";
 import styles from "./NavbarMobile.module.css";
 import NavbarMobileItem from "./NavbarMobileItem";
+// Importando ícones svg
+import CatalogosIcon from "../../public/images/icones/catalogos.svg";
+import ArticuladoresIcon from "../../public/images/icones/articuladores.svg";
+import GavetasIcon from "../../public/images/icones/gavetas.svg";
+import PainelRipadoIcon from "../../public/images/icones/painel-ripado.svg";
+import PerfilPrateleiraIcon from "../../public/images/icones/prateleiras.svg";
+import TendenciasIcon from "../../public/images/icones/tendencias.svg";
+import PortfoliosIcon from "../../public/images/icones/portfolio.svg";
+import PerfisAluminioIcon from "../../public/images/icones/perfis.svg";
 
 interface NavbarMobileProps {
   toggleNavbarMobile: () => void;
@@ -49,61 +58,60 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
       <nav className={`${styles.navbarMobile} all-rounded shadow-3`}>
         <ul className={styles.navbarNavMobile}>
           <NavbarMobileItem
+            icon={<CatalogosIcon />}
             title="Catálogo de Produtos"
             slideInMenuItems={[
-              { title: "Todos os Catálogos", href: "/" },
-              { title: "Catálogo de Ferrangens", href: "/" },
-              { title: "Catálogo de Máquinas", href: "/" },
               { title: "Catálogo de Perfis", href: "/" },
+              { title: "Catálogo de Máquinas", href: "/" },
+              { title: "Catálogo de Ferragens", href: "/" },
+              { title: "Catálogo Marca Própria", href: "/" },
+              { title: "Catálogo de Adesivos", href: "/" },
             ]}
           />
 
           <NavbarMobileItem
+            icon={<CatalogosIcon />}
             title="Experiências"
-            slideInMenuItems={[
-              { title: "Experiências", href: "/" },
-              { title: "Experiências", href: "/" },
-              { title: "Experiências", href: "/" },
-            ]}
+            slideInMenuItems={[{ title: "Visite o simulador", href: "/" }]}
           />
 
           <NavbarMobileItem
+            icon={<ArticuladoresIcon />}
             title="Articuladores"
             slideInMenuItems={[
-              { title: "Articuladores", href: "/" },
-              { title: "Articuladores", href: "/" },
-              { title: "Articuladores", href: "/" },
+              { title: "Articuladores FGVTN", href: "/" },
+              { title: "Articuladores Blum", href: "/" },
             ]}
           />
 
           <NavbarMobileItem
+            icon={<GavetasIcon />}
             title="Gavetas"
             slideInMenuItems={[
-              { title: "Gavetas", href: "/" },
-              { title: "Gavetas", href: "/" },
-              { title: "Gavetas", href: "/" },
+              { title: "Gavetas FGVTN", href: "/" },
+              { title: "Gavetas Blum", href: "/" },
             ]}
           />
 
           <NavbarMobileItem
+            icon={<PainelRipadoIcon />}
             title="Painel Ripado"
             slideInMenuItems={[
-              { title: "Painel Ripado", href: "/" },
-              { title: "Painel Ripado", href: "/" },
-              { title: "Painel Ripado", href: "/" },
+              { title: "Painel Ripado Barreto", href: "/" },
+              { title: "Painel Ripado Santa Luzia", href: "/" },
             ]}
           />
 
           <NavbarMobileItem
+            icon={<PerfilPrateleiraIcon />}
             title="Perfil Prateleira"
             slideInMenuItems={[
-              { title: "Perfil Prateleira", href: "/" },
-              { title: "Perfil Prateleira", href: "/" },
-              { title: "Perfil Prateleira", href: "/" },
+              { title: "Sistemas Perfil Prateleira", href: "/" },
             ]}
           />
 
           <NavbarMobileItem
+            icon={<TendenciasIcon />}
             title="Tendências"
             slideInMenuItems={[
               { title: "Tendências", href: "/" },
@@ -113,6 +121,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
           />
 
           <NavbarMobileItem
+            icon={<PortfoliosIcon />}
             title="Portfolios MDF"
             slideInMenuItems={[
               { title: "Portfolios MDF", href: "/" },
@@ -122,6 +131,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
           />
 
           <NavbarMobileItem
+            icon={<PerfisAluminioIcon />}
             title="Perfis de Alumínio"
             slideInMenuItems={[
               { title: "Perfis de Alumínio", href: "/" },

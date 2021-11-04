@@ -6,9 +6,9 @@
   max-height: 0;
 
   display: grid;
-  gap: 1rem;
+  gap: var(--spacing-5);
   align-items: center;
-  padding: 2rem 1rem;
+  padding: var(--spacing-7) var(--spacing-6);
 
   background-color: var(--white-1);
   color: var(--black-2);
@@ -16,18 +16,6 @@
   overflow: hidden;
 
   animation: open-from-top 0.5s ease-out forwards;
-}
-
-.dropdown.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.dropdown.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.dropdown.col-4 {
-  grid-template-columns: repeat(4, 1fr);
 }
 
 @keyframes open-from-top {

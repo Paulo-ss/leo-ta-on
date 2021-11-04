@@ -4,34 +4,11 @@
 
 .navbarNav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   list-style-type: none;
   color: var(--white-3);
-}
-
-/* Itens do dropdown */
-.dropdownItem {
-  text-align: center;
-}
-
-.dropdownItem a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dropdownItem h2 {
-  margin-bottom: 0.8rem;
-}
-
-.dropdownItem p {
-  max-width: 300px;
-}
-
-.dropdownItem + .dropdownItem {
-  border-left: 1px solid var(--black-2);
 }
 
 /* Classe para fixar a nav no topo */
@@ -43,7 +20,6 @@
   }
 }
 
-/* Estilos responsivos */
 @media (max-width: 1000px) {
   .navbar {
     display: none;
