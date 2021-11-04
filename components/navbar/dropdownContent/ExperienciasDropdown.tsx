@@ -10,8 +10,8 @@ const ExperienciasDropdown = () => {
           <div className={styles.logo}>
             <Image
               src="/images/logos/experiencias.png"
-              width="400"
-              height="133"
+              width="396"
+              height="165"
             />
           </div>
           <p>
