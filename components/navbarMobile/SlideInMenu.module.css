@@ -20,7 +20,7 @@
 }
 
 .slideInMenuHeader {
-  color: var(--black-3);
+  color: var(--text-color);
   font-size: 1.5rem;
   padding: 1rem;
   transform: rotate(180deg) !important;

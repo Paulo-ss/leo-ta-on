@@ -104,6 +104,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
 
           <NavbarMobileItem
             icon={<PerfilPrateleiraIcon />}
+            svgStroke={true}
             title="Perfil Prateleira"
             slideInMenuItems={[
               { title: "Sistemas Perfil Prateleira", href: "/" },

@@ -23,40 +23,55 @@ const ExperienciasDropdown = () => {
 
       <div className={styles.envImages}>
         <div className={styles.imagesWrapper}>
-          <div>
-            <div className={styles.image}>
-              <Image src="/images/ambientes/cozinha.png" layout="fill" />
-            </div>
+          <div className={styles.image}>
+            <Image
+              src="/images/ambientes/cozinha.png"
+              width="550"
+              height="230"
+              alt="Imagem de um ambiente de cozinha"
+            />
             <p>Cozinha</p>
           </div>
 
-          <div>
-            <div className={styles.image}>
-              <Image src="/images/ambientes/living.png" layout="fill" />
-            </div>
+          <div className={styles.image}>
+            <Image
+              src="/images/ambientes/living.png"
+              width="550"
+              height="230"
+              alt="Imagem de um ambiente de uma sala de estar"
+            />
             <p>Living</p>
           </div>
         </div>
 
         <div className={styles.imagesWrapper}>
-          <div>
-            <div className={styles.image}>
-              <Image src="/images/ambientes/home-office.png" layout="fill" />
-            </div>
+          <div className={styles.image}>
+            <Image
+              src="/images/ambientes/home-office.png"
+              width="550"
+              height="230"
+              alt="Imagem de um ambiente de um Home Office"
+            />
             <p>Home Office</p>
           </div>
 
-          <div>
-            <div className={styles.image}>
-              <Image src="/images/ambientes/home-theater.png" layout="fill" />
-            </div>
+          <div className={styles.image}>
+            <Image
+              src="/images/ambientes/home-theater.png"
+              width="550"
+              height="230"
+              alt="Imagem de um ambiente de um Home Theater"
+            />
             <p>Home Theater</p>
           </div>
 
-          <div>
-            <div className={styles.image}>
-              <Image src="/images/ambientes/dormitorio.png" layout="fill" />
-            </div>
+          <div className={styles.image}>
+            <Image
+              src="/images/ambientes/dormitorio.png"
+              width="550"
+              height="230"
+              alt="Imagem de um ambiente de quarto"
+            />
             <p>Dormitório</p>
           </div>
         </div>

@@ -12,7 +12,7 @@
 
 .navbarItem.active {
   background-color: var(--white-1);
-  color: var(--black-2);
+  color: var(--text-color);
 }
 
 .icon {
@@ -26,15 +26,30 @@
   margin-bottom: var(--spacing-2);
 }
 
-.icon svg {
+.fillIcon svg,
+.strokeIcon svg {
   width: 100%;
   height: 100%;
-
-  fill: var(--white-1);
 
   transition: fill 0.3s ease-out;
 }
 
-.navbarItem.active svg {
-  fill: var(--black-2);
+.fillIcon svg {
+  fill: var(--white-1);
+}
+
+.navbarItem.active .fillIcon svg {
+  fill: var(--text-color);
+}
+
+/* Classe para mudar a cor do stroke do svg
+ao invés do fill para svg específicos */
+.strokeIcon svg {
+  fill: none;
+  stroke: var(--white-1);
+  stroke-width: 20px;
+}
+
+.navbarItem.active .strokeIcon svg {
+  stroke: var(--text-color);
 }

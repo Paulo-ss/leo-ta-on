@@ -1,0 +1,81 @@
+.genericDropdown {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--text-color);
+}
+
+.genericDropdownItem {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.campaingLogo {
+  width: 350px;
+}
+
+.genericDropdownItem ul {
+  max-width: 300px;
+
+  list-style-type: disc;
+
+  margin-top: var(--spacing-5);
+  margin-left: var(--spacing-6);
+
+  line-height: var(--spacing-6);
+}
+
+.genericDropdownItem ul p {
+  font-weight: bold;
+  margin-top: var(--spacing-4);
+}
+
+.divider {
+  position: relative;
+  width: 1px;
+  height: 200px;
+  background-color: var(--orange);
+}
+
+.infoText {
+  max-width: 45ch;
+
+  color: var(--text-color);
+  margin-top: var(--spacing-1);
+  margin-left: 4.7rem;
+}
+
+.genericDropdownItem span {
+  align-self: center;
+
+  font-weight: 700;
+  color: var(--orange);
+  text-align: center;
+
+  width: 20ch;
+}
+
+.genericDropdownItem a {
+  align-self: center;
+}
+
+.logo {
+  position: relative;
+  width: 145px;
+
+  margin-top: var(--spacing-7);
+
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}

@@ -27,6 +27,7 @@ const CatalogDropdown = () => {
                 src="/images/catalogos/catalogo-perfis.jpg"
                 width="595"
                 height="842"
+                alt="Capa do Catálogo de Perfis"
               />
             </a>
           </Link>
@@ -38,6 +39,7 @@ const CatalogDropdown = () => {
                 src="/images/catalogos/catalogo-maquinas.jpg"
                 width="595"
                 height="842"
+                alt="Capa do Catálogo de Máquinas"
               />
             </a>
           </Link>
@@ -49,6 +51,7 @@ const CatalogDropdown = () => {
                 src="/images/catalogos/catalogo-ferragens.jpg"
                 width="595"
                 height="842"
+                alt="Capa do Catálogo de Ferragens"
               />
             </a>
           </Link>
@@ -60,6 +63,7 @@ const CatalogDropdown = () => {
                 src="/images/catalogos/catalogo-marca-propria.jpg"
                 width="595"
                 height="842"
+                alt="Capa do Catálogo de Marca Própria"
               />
             </a>
           </Link>
@@ -71,6 +75,7 @@ const CatalogDropdown = () => {
                 src="/images/catalogos/catalogo-adesivos.jpeg"
                 width="667"
                 height="940"
+                alt="Capa do Catálogo de Adesivos"
               />
             </a>
           </Link>

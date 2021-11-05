@@ -3,13 +3,14 @@
   top: 0;
   width: 100%;
   height: 100%;
+  padding: var(--spacing-4);
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1000;
 }
 
 .navbarMobile {
   position: relative;
-  width: 95%;
+  max-width: 560px;
   margin: 0 auto;
   overflow: hidden;
   animation: show-from-top 0.3s ease-out forwards;
@@ -44,7 +45,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: var(--spacing-4) var(--spacing-3);
+  margin: var(--spacing-4) 0;
   border: none;
   border-radius: 50%;
   outline: none;

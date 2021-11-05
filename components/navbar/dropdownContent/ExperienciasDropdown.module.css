@@ -29,12 +29,16 @@
 
 .image {
   position: relative;
-  width: 190px;
-  height: 90px;
+  width: 200px;
 }
 
 .imagesWrapper p {
-  margin-top: var(--spacing-1);
   font-size: var(--font-size-4);
   text-align: right;
+}
+
+@media (max-width: 1080px) {
+  .image {
+    width: 180px;
+  }
 }

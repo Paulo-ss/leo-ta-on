@@ -13,6 +13,10 @@ import PortfoliosIcon from "../../public/images/icones/portfolio.svg";
 import PerfisAluminioIcon from "../../public/images/icones/perfis.svg";
 import CatalogDropdown from "./dropdownContent/CatalogDropdown";
 import ExperienciasDropdown from "./dropdownContent/ExperienciasDropdown";
+import ArticuladoresDropdown from "./dropdownContent/ArticuladoresDropdown";
+import GavetasDropdown from "./dropdownContent/GavetasDropdown";
+import PainelRipadoDropdown from "./dropdownContent/PainelRipadoDropdown";
+import PerfilPrateleiraDropdown from "./dropdownContent/PerfilPrateleiraDropdown";
 
 const Navbar: React.FC = () => {
   // Ref da navbar
@@ -58,25 +62,29 @@ const Navbar: React.FC = () => {
 
           <NavbarItem title="Articuladores" icon={<ArticuladoresIcon />}>
             <Dropdown>
-              <div></div>
+              <ArticuladoresDropdown />
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Gavetas" icon={<GavetasIcon />}>
             <Dropdown>
-              <div></div>
+              <GavetasDropdown />
             </Dropdown>
           </NavbarItem>
 
           <NavbarItem title="Painel Ripado" icon={<PainelRipadoIcon />}>
             <Dropdown>
-              <div></div>
+              <PainelRipadoDropdown />
             </Dropdown>
           </NavbarItem>
 
-          <NavbarItem title="Perfil Prateleira" icon={<PerfilPrateleiraIcon />}>
+          <NavbarItem
+            title="Perfil Prateleira"
+            svgStroke={true}
+            icon={<PerfilPrateleiraIcon />}
+          >
             <Dropdown>
-              <div></div>
+              <PerfilPrateleiraDropdown />
             </Dropdown>
           </NavbarItem>
 

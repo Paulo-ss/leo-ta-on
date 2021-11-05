@@ -8,12 +8,17 @@ interface SlideInMenuItemObj {
 }
 interface NavbarMobileItemProps {
   icon: React.ReactNode;
+  // svgStroke é uma prop boolean opcional que quando true,
+  // aplica uma casse no ícone svg passado para estilizar
+  // o stroke ao invés do fill para svg vazados
+  svgStroke?: boolean;
   title: string;
   slideInMenuItems: SlideInMenuItemObj[];
 }
 
 const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
   icon,
+  svgStroke,
   title,
   slideInMenuItems,
 }) => {
@@ -26,14 +31,21 @@ const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
 
   return (
     <li className={styles.navbarMobileItem}>
-      <div onClick={toggleSlideInMenu}>
+      <div className={styles.slideInMenuToggler} onClick={toggleSlideInMenu}>
         <div>
-          <span className={styles.icon}>{icon}</span>
+          <span
+            className={`${styles.icon} ${
+              svgStroke ? styles.strokeIcon : styles.fillIcon
+            }`}
+          >
+            {icon}
+          </span>
           <p>{title}</p>
         </div>
 
         <span>➜</span>
       </div>
+
       <SlideInMenu
         openSlideInMenu={openSlideInMenu}
         toggleSlideInMenu={toggleSlideInMenu}
