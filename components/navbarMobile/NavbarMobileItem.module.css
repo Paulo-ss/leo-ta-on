@@ -12,7 +12,7 @@
   align-items: center;
 
   width: 100%;
-  padding: 1.3rem;
+  padding: var(--spacing-6);
 
   color: var(--white-3);
 
@@ -69,4 +69,16 @@ ao invés do fill para svg específicos */
 
 .slideInMenuToggler:hover .strokeIcon svg {
   stroke: var(--text-color);
+}
+
+@media (max-width: 400px) {
+  .slideInMenuToggler {
+    padding: var(--spacing-5);
+    font-size: var(--font-size-4);
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
 }

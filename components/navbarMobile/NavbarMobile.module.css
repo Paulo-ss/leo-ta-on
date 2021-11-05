@@ -6,6 +6,8 @@
   padding: var(--spacing-4);
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1000;
+
+  overflow-y: auto;
 }
 
 .navbarMobile {

@@ -5,7 +5,7 @@
 .slideInMenuItem a {
   display: block;
   width: 100%;
-  padding: 1rem;
+  padding: var(--spacing-6);
   background-color: var(--white-2);
 
   color: var(--text-color);
@@ -15,4 +15,11 @@
 
 .slideInMenuItem a:hover {
   background-color: var(--white-3);
+}
+
+@media (max-width: 400px) {
+  .slideInMenuItem a {
+    padding: var(--spacing-5);
+    font-size: var(--font-size-4);
+  }
 }
