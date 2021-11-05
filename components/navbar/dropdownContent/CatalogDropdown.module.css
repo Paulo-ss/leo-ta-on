@@ -39,12 +39,15 @@
 .catalog {
   position: relative;
   width: 145px;
+}
 
+.catalog a {
   transform: scale(1);
   transition: transform 0.3s ease;
 }
 
-.catalog:hover {
+.catalog a:hover,
+.catalog a:focus {
   transform: scale(1.05);
 }
 

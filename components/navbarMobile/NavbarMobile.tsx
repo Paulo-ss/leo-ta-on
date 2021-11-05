@@ -72,7 +72,38 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
           <NavbarMobileItem
             icon={<CatalogosIcon />}
             title="Experiências"
-            slideInMenuItems={[{ title: "Visite o simulador", href: "/" }]}
+            slideInMenuItems={[
+              {
+                title: "Visite o simulador",
+                href: "https://www.experienciasleo.com.br/",
+                targetBlank: true,
+              },
+              {
+                title: "Abrir simulador na Cozinha",
+                href: "https://www.experienciasleo.com.br/?ambiente=scene01&marca=01_duratex",
+                targetBlank: true,
+              },
+              {
+                title: "Abrir simulador no Living",
+                href: "https://www.experienciasleo.com.br/?ambiente=scene05&marca=01_duratex",
+                targetBlank: true,
+              },
+              {
+                title: "Abrir simulador no Home Office",
+                href: "https://www.experienciasleo.com.br/?ambiente=scene03&marca=01_duratex",
+                targetBlank: true,
+              },
+              {
+                title: "Abrir simulador no Home Theater",
+                href: "https://www.experienciasleo.com.br/?ambiente=scene04&marca=01_duratex",
+                targetBlank: true,
+              },
+              {
+                title: "Abrir simulador no Dormitório",
+                href: "https://www.experienciasleo.com.br/?ambiente=scene02&marca=01_duratex",
+                targetBlank: true,
+              },
+            ]}
           />
 
           <NavbarMobileItem

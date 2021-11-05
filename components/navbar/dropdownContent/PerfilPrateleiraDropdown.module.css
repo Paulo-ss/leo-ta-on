@@ -20,13 +20,12 @@
   max-width: 50ch;
 
   color: var(--text-color);
-  margin-top: var(--spacing-4);
+  margin: var(--spacing-4) 0;
 }
 
-.perfilPrateleiraDropdownItem a {
+.perfilPrateleiraDropdownItem span {
   font-weight: 700;
   color: var(--orange);
-  margin-top: var(--spacing-4);
 }
 
 .image {

@@ -4,6 +4,7 @@ import SlideInMenu from "./SlideInMenu";
 import SlideInMenuItem from "./SlideInMenuItem";
 interface SlideInMenuItemObj {
   title: string;
+  targetBlank?: boolean;
   href: string;
 }
 interface NavbarMobileItemProps {
@@ -51,7 +52,12 @@ const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
         toggleSlideInMenu={toggleSlideInMenu}
       >
         {slideInMenuItems.map((item, index) => (
-          <SlideInMenuItem key={index} title={item.title} href={item.href} />
+          <SlideInMenuItem
+            key={index}
+            title={item.title}
+            href={item.href}
+            targetBlank={item.targetBlank}
+          />
         ))}
       </SlideInMenu>
     </li>

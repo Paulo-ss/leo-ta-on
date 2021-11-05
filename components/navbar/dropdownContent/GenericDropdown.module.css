@@ -64,6 +64,9 @@
 
 .genericDropdownItem a {
   align-self: center;
+
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
 
 .logo {
@@ -76,6 +79,7 @@
   transition: transform 0.3s ease;
 }
 
-.logo:hover {
+.logo:hover,
+.genericDropdownItem a:focus {
   transform: scale(1.05);
 }
