@@ -3,6 +3,7 @@ import styles from "./NavbarMobile.module.css";
 import NavbarMobileItem from "./NavbarMobileItem";
 // Importando ícones svg
 import CatalogosIcon from "../../public/images/icones/catalogos.svg";
+import ExperienciasIcon from "../../public/images/icones/experiencias.svg";
 import ArticuladoresIcon from "../../public/images/icones/articuladores.svg";
 import GavetasIcon from "../../public/images/icones/gavetas.svg";
 import PainelRipadoIcon from "../../public/images/icones/painel-ripado.svg";
@@ -70,7 +71,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
           />
 
           <NavbarMobileItem
-            icon={<CatalogosIcon />}
+            icon={<ExperienciasIcon />}
             title="Experiências"
             slideInMenuItems={[
               {

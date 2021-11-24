@@ -14,14 +14,22 @@
 /* Classe para fixar a nav no topo */
 @media (min-width: 1001px) {
   .fixedNav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
+
+    z-index: 100;
   }
 }
 
 @media (max-width: 1000px) {
   .navbar {
     display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .navbar {
+    padding: 0 var(--spacing-4);
   }
 }

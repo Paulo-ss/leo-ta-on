@@ -1,0 +1,15 @@
+.linkButton {
+  padding: var(--spacing-3) var(--spacing-6);
+
+  font-weight: 700;
+  color: var(--white-1);
+
+  max-width: 200px;
+
+  transition: filter 0.3s ease;
+}
+
+.linkButton:hover,
+.linkButton:focus {
+  filter: brightness(0.9);
+}

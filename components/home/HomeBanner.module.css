@@ -1,0 +1,84 @@
+.bannerContainer {
+  position: relative;
+
+  background-image: url("../../public/images/pages/home/fundo-verde-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: var(--white-2);
+  font-weight: 700;
+
+  padding: var(--spacing-7) var(--spacing-4);
+}
+
+.bannerInfo p {
+  font-size: var(--font-size-6);
+}
+
+.bannerInfo h3 {
+  font-size: var(--font-size-7);
+  max-width: 15ch;
+}
+
+.bannerImage {
+  max-width: 670px;
+}
+
+@media (max-width: 1150px) {
+  .bannerContainer {
+    padding: var(--spacing-7) var(--spacing-5);
+  }
+
+  .bannerInfo h3 {
+    font-size: var(--font-size-6);
+  }
+
+  .bannerImage {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 975px) {
+  .bannerContent {
+    padding: var(--spacing-5);
+  }
+
+  .bannerInfo .bannerLogo {
+    max-width: 250px;
+  }
+
+  .bannerImage {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 750px) {
+  .bannerImage {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bannerContent {
+    padding: 0;
+  }
+
+  .bannerContent {
+    flex-direction: column;
+  }
+
+  .bannerInfo {
+    margin-bottom: var(--spacing-6);
+  }
+
+  .bannerInfo h3 {
+    max-width: 28ch;
+  }
+}

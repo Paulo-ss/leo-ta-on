@@ -4,6 +4,7 @@ import Dropdown from "./Dropdown";
 import styles from "./Navbar.module.css";
 import NavbarItem from "./NavbarItem";
 import CatalogosIcon from "../../public/images/icones/catalogos.svg";
+import ExperienciasIcon from "../../public/images/icones/experiencias.svg";
 import ArticuladoresIcon from "../../public/images/icones/articuladores.svg";
 import GavetasIcon from "../../public/images/icones/gavetas.svg";
 import PainelRipadoIcon from "../../public/images/icones/painel-ripado.svg";
@@ -54,7 +55,7 @@ const Navbar: React.FC = () => {
             </Dropdown>
           </NavbarItem>
 
-          <NavbarItem title="Experiências" icon={<CatalogosIcon />}>
+          <NavbarItem title="Experiências" icon={<ExperienciasIcon />}>
             <Dropdown>
               <ExperienciasDropdown />
             </Dropdown>

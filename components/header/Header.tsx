@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Container from "../layout/Container";
-import Navbar from "../navbar/Navbar";
 import NavbarMobile from "../navbarMobile/NavbarMobile";
 import styles from "./Header.module.css";
 
@@ -33,8 +32,6 @@ const Header: React.FC = () => {
         </div>
       </Container>
 
-      {/* Navbar para telas maiores */}
-      <Navbar />
       {/* Navbar no mobile e telas menores */}
       {openNavbarMobile && (
         <NavbarMobile toggleNavbarMobile={toggleNavbarMobile} />

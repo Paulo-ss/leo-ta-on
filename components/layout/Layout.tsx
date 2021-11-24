@@ -1,5 +1,8 @@
 import React from "react";
+import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import Navbar from "../navbar/Navbar";
+import styles from "./Layout.module.css";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -8,9 +11,15 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Header />
+      <section className={styles.body}>
+        <Header />
+        {/* Navbar para telas maiores */}
+        <Navbar />
 
-      <main>{children}</main>
+        <main>{children}</main>
+
+        <Footer />
+      </section>
     </>
   );
 };

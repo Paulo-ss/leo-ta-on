@@ -15,17 +15,17 @@
 
   overflow: hidden;
 
+  z-index: 100;
+
   animation: open-from-top 0.5s ease-out forwards;
 }
 
 @keyframes open-from-top {
   from {
     max-height: 0rem;
-    opacity: 0;
   }
 
   to {
     max-height: 20rem;
-    opacity: 1;
   }
 }

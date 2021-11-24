@@ -53,3 +53,9 @@ ao invés do fill para svg específicos */
 .navbarItem.active .strokeIcon svg {
   stroke: var(--text-color);
 }
+
+@media (max-width: 1150px) {
+  .navbarItem > a {
+    padding: var(--spacing-3) var(--spacing-2);
+  }
+}
