@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./HomeBanner.module.css";
 import Image from "next/image";
 import Container from "../layout/Container";

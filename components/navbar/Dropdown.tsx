@@ -1,15 +1,17 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Dropdown.module.css";
+import { motion } from "framer-motion";
 
-interface DropdownProps {
-  children: React.ReactNode;
-}
-
-const Dropdown: React.FC<DropdownProps> = ({ children }) => {
+const Dropdown: FC = ({ children }) => {
   return (
-    <div className={`${styles.dropdown} bottom-corners-rounded shadow-2`}>
+    <motion.div
+      initial={{ maxHeight: "0rem" }}
+      animate={{ maxHeight: "20rem" }}
+      transition={{ duration: 1, type: "spring" }}
+      className={`${styles.dropdown} bottom-corners-rounded shadow-md`}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 };
 

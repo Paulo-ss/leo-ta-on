@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import Container from "../layout/Container";
 import NavbarMobile from "../navbarMobile/NavbarMobile";
 import styles from "./Header.module.css";
@@ -12,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`${styles.header} shadow-2`}>
+    <header className={`${styles.header} shadow-md`}>
       <Container>
         <div className={styles.headerWrapper}>
           <div className={styles.logo}>
@@ -33,9 +34,11 @@ const Header: React.FC = () => {
       </Container>
 
       {/* Navbar no mobile e telas menores */}
-      {openNavbarMobile && (
-        <NavbarMobile toggleNavbarMobile={toggleNavbarMobile} />
-      )}
+      <AnimatePresence exitBeforeEnter={true}>
+        {openNavbarMobile && (
+          <NavbarMobile toggleNavbarMobile={toggleNavbarMobile} />
+        )}
+      </AnimatePresence>
     </header>
   );
 };

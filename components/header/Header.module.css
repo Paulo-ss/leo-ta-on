@@ -1,5 +1,5 @@
 .header {
-  background: var(--primary-color-3);
+  background: var(--primary-color-light);
 
   z-index: 100;
 }

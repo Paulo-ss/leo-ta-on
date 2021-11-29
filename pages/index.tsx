@@ -1,11 +1,11 @@
-import Cards from "../components/home/Cards";
 import HomeBanner from "../components/home/HomeBanner";
+import HomeCards from "../components/home/HomeCards";
 
 const Home = () => {
   return (
     <>
       <HomeBanner />
-      <Cards />
+      <HomeCards />
     </>
   );
 };

@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import { FC, useEffect } from "react";
 import styles from "./NavbarMobile.module.css";
 import NavbarMobileItem from "./NavbarMobileItem";
+import { motion } from "framer-motion";
 // Importando ícones svg
 import CatalogosIcon from "../../public/images/icones/catalogos.svg";
 import ExperienciasIcon from "../../public/images/icones/experiencias.svg";
@@ -12,11 +13,11 @@ import TendenciasIcon from "../../public/images/icones/tendencias.svg";
 import PortfoliosIcon from "../../public/images/icones/portfolio.svg";
 import PerfisAluminioIcon from "../../public/images/icones/perfis.svg";
 
-interface NavbarMobileProps {
+interface Props {
   toggleNavbarMobile: () => void;
 }
 
-const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
+const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
   // Função para fechar o menu mobile caso
   // o usuário clique fora do menu
   const handleClickOutside = (e: React.MouseEvent) => {
@@ -48,7 +49,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
     <div className={styles.blackBg} onClick={handleClickOutside}>
       {/* Botão para fechar a navbar mobile */}
       <button
-        className={`${styles.closeNavBtn} shadow-3`}
+        className={`${styles.closeNavBtn} shadow-lg`}
         onClick={toggleNavbarMobile}
         title="Fechar menu"
       >
@@ -56,7 +57,13 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
         <span></span>
       </button>
 
-      <nav className={`${styles.navbarMobile} all-rounded shadow-3`}>
+      <motion.nav
+        initial={{ opacity: 0, translateY: "-50%" }}
+        animate={{ opacity: 1, translateY: 0 }}
+        exit={{ opacity: 0, translateY: "-50%" }}
+        transition={{ duration: 0.3, type: "spring" }}
+        className={`${styles.navbarMobile} all-rounded shadow-lg`}
+      >
         <ul className={styles.navbarNavMobile}>
           <NavbarMobileItem
             icon={<CatalogosIcon />}
@@ -173,7 +180,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ toggleNavbarMobile }) => {
             ]}
           />
         </ul>
-      </nav>
+      </motion.nav>
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.cardsWrapper {
+  display: flex;
+  align-items: center;
+
+  padding: var(--spacing-7) var(--spacing-5);
+}
+
+@media (max-width: 640px) {
+  .cardsWrapper {
+    flex-direction: column;
+  }
+}

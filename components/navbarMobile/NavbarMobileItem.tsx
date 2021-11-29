@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import { FC, ReactNode, useState } from "react";
+import { SlideInMenuItemObj } from "../../interfaces/Interfaces";
 import styles from "./NavbarMobileItem.module.css";
 import SlideInMenu from "./SlideInMenu";
 import SlideInMenuItem from "./SlideInMenuItem";
-interface SlideInMenuItemObj {
-  title: string;
-  targetBlank?: boolean;
-  href: string;
-}
-interface NavbarMobileItemProps {
-  icon: React.ReactNode;
+
+interface Props {
+  icon: ReactNode;
   // svgStroke é uma prop boolean opcional que quando true,
   // aplica uma casse no ícone svg passado para estilizar
   // o stroke ao invés do fill para svg vazados
@@ -17,7 +14,7 @@ interface NavbarMobileItemProps {
   slideInMenuItems: SlideInMenuItemObj[];
 }
 
-const NavbarMobileItem: React.FC<NavbarMobileItemProps> = ({
+const NavbarMobileItem: FC<Props> = ({
   icon,
   svgStroke,
   title,

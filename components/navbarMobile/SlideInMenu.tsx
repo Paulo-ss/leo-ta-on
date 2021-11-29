@@ -1,12 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./SlideInMenu.module.css";
-interface SlideInMenuProps {
+interface Props {
   openSlideInMenu: boolean;
   toggleSlideInMenu: () => void;
-  children: React.ReactNode;
 }
 
-const SlideInMenu: React.FC<SlideInMenuProps> = ({
+const SlideInMenu: FC<Props> = ({
   openSlideInMenu,
   toggleSlideInMenu,
   children,
