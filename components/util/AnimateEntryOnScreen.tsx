@@ -1,39 +1,59 @@
-import React from "react";
+import { FC, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-interface AnimateEntryOnScreenProps {
-  children: React.ReactNode;
+interface Props {
+  animationType: "fadeInFromBottom" | "fadeInFromTop" | "fadeInFromLeft";
   delay?: number;
 }
 
 // Componente para animar a entrada dos elementos na tela
 // enquanto o usuário efetua o scroll
-const AnimateEntryOnScreen: React.FC<AnimateEntryOnScreenProps> = ({
-  children,
+const AnimateEntryOnScreen: FC<Props> = ({
+  animationType,
   delay,
+  children,
 }) => {
+  // Hook useInView para identificar quando o
+  // elemento entrar na tela no scroll
   const { ref, inView } = useInView({ threshold: 0.3 });
+
+  // Hook animation do framer-motion
   const animation = useAnimation();
 
-  React.useEffect(() => {
+  // Objeto com diferentes animações para o framer-motion
+  // que podem ser selecionados a partir de props
+  const animations = {
+    fadeInFromBottom: {
+      initial: { opacity: 0, translateY: 50 },
+      start: { opacity: 1, translateY: 0 },
+    },
+    fadeInFromTop: {
+      initial: { opacity: 0, translateY: -50 },
+      start: { opacity: 1, translateY: 0 },
+    },
+    fadeInFromLeft: {
+      initial: { opacity: 0, translateX: -50 },
+      start: { opacity: 1, translateY: 0 },
+    },
+  };
+
+  // Efeito para animar a entrada dos elementos na tela
+  useEffect(() => {
     if (inView) {
-      animation.start({
-        opacity: 1,
-        translateY: 0,
-        transition: {
-          type: "spring",
-          duration: 1,
-          delay: delay,
-        },
-      });
+      animation.start(animations[animationType].start);
     }
   }, [inView]);
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, translateY: 50 }}
+      initial={animations[animationType].initial}
+      transition={{
+        type: "spring",
+        duration: 1,
+        delay: delay,
+      }}
       animate={animation}
     >
       {children}

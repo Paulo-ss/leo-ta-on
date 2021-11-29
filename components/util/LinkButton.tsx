@@ -1,14 +1,14 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./LinkButton.module.css";
 import Link from "next/link";
 
-interface LinkButtonProps {
+interface Props {
   href: string;
   text: string;
   bgColor: string;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = ({ href, text, bgColor }) => {
+const LinkButton: FC<Props> = ({ href, text, bgColor }) => {
   return (
     <Link href={href}>
       <a

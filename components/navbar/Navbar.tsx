@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import Container from "../layout/Container";
 import Dropdown from "./Dropdown";
 import styles from "./Navbar.module.css";
@@ -19,7 +19,7 @@ import GavetasDropdown from "./dropdownContent/GavetasDropdown";
 import PainelRipadoDropdown from "./dropdownContent/PainelRipadoDropdown";
 import PerfilPrateleiraDropdown from "./dropdownContent/PerfilPrateleiraDropdown";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   // Ref da navbar
   const navbarRef = useRef<HTMLElement>(null);
 
@@ -32,9 +32,9 @@ const Navbar: React.FC = () => {
       const scrollPosition = window.pageYOffset;
 
       if (navbarPosition && scrollPosition > navbarPosition) {
-        navbarRef.current.classList.add(`${styles.fixedNav}`, "shadow-2");
+        navbarRef.current.classList.add(`${styles.fixedNav}`, "shadow-md");
       } else {
-        navbarRef.current?.classList.remove(styles.fixedNav, "shadow-2");
+        navbarRef.current?.classList.remove(styles.fixedNav, "shadow-md");
       }
     };
 
@@ -50,33 +50,23 @@ const Navbar: React.FC = () => {
       <Container>
         <ul className={styles.navbarNav}>
           <NavbarItem title="Catálogo de Produtos" icon={<CatalogosIcon />}>
-            <Dropdown>
-              <CatalogDropdown />
-            </Dropdown>
+            <CatalogDropdown />
           </NavbarItem>
 
           <NavbarItem title="Experiências" icon={<ExperienciasIcon />}>
-            <Dropdown>
-              <ExperienciasDropdown />
-            </Dropdown>
+            <ExperienciasDropdown />
           </NavbarItem>
 
           <NavbarItem title="Articuladores" icon={<ArticuladoresIcon />}>
-            <Dropdown>
-              <ArticuladoresDropdown />
-            </Dropdown>
+            <ArticuladoresDropdown />
           </NavbarItem>
 
           <NavbarItem title="Gavetas" icon={<GavetasIcon />}>
-            <Dropdown>
-              <GavetasDropdown />
-            </Dropdown>
+            <GavetasDropdown />
           </NavbarItem>
 
           <NavbarItem title="Painel Ripado" icon={<PainelRipadoIcon />}>
-            <Dropdown>
-              <PainelRipadoDropdown />
-            </Dropdown>
+            <PainelRipadoDropdown />
           </NavbarItem>
 
           <NavbarItem
@@ -84,27 +74,19 @@ const Navbar: React.FC = () => {
             svgStroke={true}
             icon={<PerfilPrateleiraIcon />}
           >
-            <Dropdown>
-              <PerfilPrateleiraDropdown />
-            </Dropdown>
+            <PerfilPrateleiraDropdown />
           </NavbarItem>
 
           <NavbarItem title="Tendências" icon={<TendenciasIcon />}>
-            <Dropdown>
-              <div></div>
-            </Dropdown>
+            <div></div>
           </NavbarItem>
 
           <NavbarItem title="Portfolios MDF" icon={<PortfoliosIcon />}>
-            <Dropdown>
-              <div></div>
-            </Dropdown>
+            <div></div>
           </NavbarItem>
 
           <NavbarItem title="Perfis de Alumínio" icon={<PerfisAluminioIcon />}>
-            <Dropdown>
-              <div></div>
-            </Dropdown>
+            <div></div>
           </NavbarItem>
         </ul>
       </Container>

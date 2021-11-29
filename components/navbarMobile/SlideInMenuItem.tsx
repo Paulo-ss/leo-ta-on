@@ -1,14 +1,8 @@
-import React from "react";
 import styles from "./SlideInMenuItem.module.css";
 import Link from "next/link";
+import { SlideInMenuItemObj } from "../../interfaces/Interfaces";
 
-interface SlideInMenuItemProps {
-  title: string;
-  targetBlank?: boolean;
-  href: string;
-}
-
-const SlideInMenuItem: React.FC<SlideInMenuItemProps> = ({
+const SlideInMenuItem: React.FC<SlideInMenuItemObj> = ({
   title,
   href,
   targetBlank,

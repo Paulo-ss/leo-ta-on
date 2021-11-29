@@ -1,31 +1,26 @@
-import React, { useState } from "react";
+import { FC, ReactNode, useState } from "react";
 import styles from "./NavbarItem.module.css";
 import Link from "next/link";
+import Dropdown from "./Dropdown";
 
-interface NavbarItemProps {
-  icon: React.ReactNode;
+interface Props {
+  icon: ReactNode;
   // svgStroke é uma prop boolean opcional que quando true,
   // aplica uma casse no ícone svg passado para estilizar
   // o stroke ao invés do fill para svg vazados
   svgStroke?: boolean;
   title: string;
-  children: React.ReactNode;
 }
 
-const NavbarItem: React.FC<NavbarItemProps> = ({
-  icon,
-  svgStroke,
-  title,
-  children,
-}) => {
+const NavbarItem: FC<Props> = ({ icon, svgStroke, title, children }) => {
   // Estado se o dropdown está aberto
-  const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <li
-      className={`${styles.navbarItem} ${isOpen && styles.active}`}
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
+      className={`${styles.navbarItem} ${isDropdownOpen && styles.active}`}
+      onMouseEnter={() => setIsDropdownOpen(true)}
+      onMouseLeave={() => setIsDropdownOpen(false)}
     >
       <Link href="/">
         <a>
@@ -41,7 +36,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({
       </Link>
 
       {/* Renderizando o dropdown */}
-      {isOpen && children}
+      {isDropdownOpen && <Dropdown>{children}</Dropdown>}
     </li>
   );
 };
