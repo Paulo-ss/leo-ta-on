@@ -34,7 +34,7 @@ const AnimateEntryOnScreen: FC<Props> = ({
     },
     fadeInFromLeft: {
       initial: { opacity: 0, translateX: -50 },
-      start: { opacity: 1, translateY: 0 },
+      start: { opacity: 1, translateX: 0 },
     },
   };
 
