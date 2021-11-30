@@ -1,0 +1,32 @@
+.catalogContainer {
+  padding: var(--spacing-8);
+}
+
+.header {
+  margin: 0 auto;
+  margin-bottom: var(--spacing-7);
+  max-width: 80ch;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--primary-color-light);
+  margin-bottom: var(--spacing-1);
+}
+
+@media (max-width: 1000px) {
+  .catalogContainer {
+    padding: var(--spacing-6);
+  }
+}
+
+@media (max-width: 740px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}

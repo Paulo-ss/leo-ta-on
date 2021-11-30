@@ -3,6 +3,7 @@ import { useState } from "react";
 import Container from "../layout/Container";
 import NavbarMobile from "../navbarMobile/NavbarMobile";
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   // Estado da navbar mobile
@@ -17,7 +18,11 @@ const Header: React.FC = () => {
       <Container>
         <div className={styles.headerWrapper}>
           <div className={styles.logo}>
-            <h1>LEO TA ON</h1>
+            <Link href="/">
+              <a>
+                <h1>LEO TA ON</h1>
+              </a>
+            </Link>
           </div>
 
           {/* Botão para abrir a navbar mobile */}

@@ -13,6 +13,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <title>Leo Ta On</title>
         </Head>
 
         <Component {...pageProps} />
