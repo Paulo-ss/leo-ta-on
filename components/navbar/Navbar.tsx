@@ -1,6 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
 import Container from "../layout/Container";
-import Dropdown from "./Dropdown";
 import styles from "./Navbar.module.css";
 import NavbarItem from "./NavbarItem";
 import CatalogosIcon from "../../public/images/icones/catalogos.svg";
@@ -20,33 +18,8 @@ import PainelRipadoDropdown from "./dropdownContent/PainelRipadoDropdown";
 import PerfilPrateleiraDropdown from "./dropdownContent/PerfilPrateleiraDropdown";
 
 const Navbar = () => {
-  // Ref da navbar
-  const navbarRef = useRef<HTMLElement>(null);
-
-  // LayoutEffect para fixar a navbar quando
-  // ela for sair da tela
-  useLayoutEffect(() => {
-    const navbarPosition = navbarRef.current?.offsetTop;
-
-    const onScroll = () => {
-      const scrollPosition = window.pageYOffset;
-
-      if (navbarPosition && scrollPosition > navbarPosition) {
-        navbarRef.current.classList.add(`${styles.fixedNav}`, "shadow-md");
-      } else {
-        navbarRef.current?.classList.remove(styles.fixedNav, "shadow-md");
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
   return (
-    <nav className={styles.navbar} ref={navbarRef}>
+    <nav className={styles.navbar}>
       <Container>
         <ul className={styles.navbarNav}>
           <NavbarItem title="Catálogo de Produtos" icon={<CatalogosIcon />}>

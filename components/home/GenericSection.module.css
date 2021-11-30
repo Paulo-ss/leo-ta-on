@@ -1,0 +1,92 @@
+.section {
+  padding: var(--spacing-8);
+  text-align: center;
+}
+
+.section p {
+  font-size: 1.4rem;
+  color: var(--black-1);
+}
+
+.header {
+  margin: 0 auto;
+  margin-bottom: var(--spacing-7);
+  max-width: 80ch;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--primary-color-light);
+  margin-bottom: var(--spacing-1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-5);
+}
+
+.grid .image {
+  margin-bottom: var(--spacing-5);
+}
+
+.grid h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.grid p {
+  font-size: 1rem;
+  margin: var(--spacing-3) 0;
+}
+
+.grid a {
+  position: relative;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.grid a:hover,
+.grid a:focus {
+  text-decoration: underline;
+}
+
+.grid a::before {
+  content: ">>";
+  position: absolute;
+  transform: translateX(-30px);
+  transition: transform 0.3s ease;
+}
+
+.grid a:hover::before,
+.grid a:focus::before {
+  transform: translateX(-20px);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: var(--spacing-6);
+  }
+}
+
+@media (max-width: 740px) {
+  .grid {
+    grid-template-columns: minmax(250px, 450px);
+    justify-content: center;
+    gap: var(--spacing-7);
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .grid h3 {
+    font-size: 1.2rem;
+  }
+}
