@@ -32,7 +32,7 @@ const CatalogDropdown = () => {
           </Link>
         </div>
         <div className={styles.catalog}>
-          <Link href="/">
+          <Link href="/catalogos/catalogo-de-maquinas">
             <a>
               <Image
                 src="/images/catalogos/catalogo-maquinas.jpg"
@@ -44,7 +44,7 @@ const CatalogDropdown = () => {
           </Link>
         </div>
         <div className={styles.catalog}>
-          <Link href="/">
+          <Link href="/catalogos/catalogo-de-ferragens">
             <a>
               <Image
                 src="/images/catalogos/catalogo-ferragens.jpg"

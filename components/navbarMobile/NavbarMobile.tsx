@@ -70,8 +70,14 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             title="Catálogo de Produtos"
             slideInMenuItems={[
               { title: "Catálogo de Perfis", href: "/" },
-              { title: "Catálogo de Máquinas", href: "/" },
-              { title: "Catálogo de Ferragens", href: "/" },
+              {
+                title: "Catálogo de Máquinas",
+                href: "/catalogos/catalogo-de-maquinas",
+              },
+              {
+                title: "Catálogo de Ferragens",
+                href: "/catalogos/catalogo-de-ferragens",
+              },
               { title: "Catálogo Marca Própria", href: "/" },
               { title: "Catálogo de Adesivos", href: "/" },
             ]}
