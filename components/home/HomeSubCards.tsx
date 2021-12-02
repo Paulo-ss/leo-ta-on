@@ -35,7 +35,7 @@ const HomeSubCards = () => {
               </p>
 
               <div className={styles.logos}>
-                <Link href="/">
+                <Link href="/articuladores/fgvtn">
                   <a>
                     <Image
                       src="/images/logos/fgvtn.png"
@@ -46,7 +46,7 @@ const HomeSubCards = () => {
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/articuladores/blum">
                   <a>
                     <Image
                       src="/images/logos/blum.png"
@@ -84,7 +84,7 @@ const HomeSubCards = () => {
               </p>
 
               <div className={styles.logos}>
-                <Link href="/">
+                <Link href="/gavetas/fgvtn">
                   <a>
                     <Image
                       src="/images/logos/fgvtn.png"
@@ -95,7 +95,7 @@ const HomeSubCards = () => {
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/gavetas/blum">
                   <a>
                     <Image
                       src="/images/logos/blum.png"

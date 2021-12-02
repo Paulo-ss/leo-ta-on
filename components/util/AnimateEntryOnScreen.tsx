@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 interface Props {
   animationType: "fadeInFromBottom" | "fadeInFromTop" | "fadeInFromLeft";
   delay?: number;
+  className?: string;
 }
 
 // Componente para animar a entrada dos elementos na tela
@@ -12,6 +13,7 @@ interface Props {
 const AnimateEntryOnScreen: FC<Props> = ({
   animationType,
   delay,
+  className,
   children,
 }) => {
   // Hook useInView para identificar quando o
@@ -55,6 +57,7 @@ const AnimateEntryOnScreen: FC<Props> = ({
         delay: delay,
       }}
       animate={animation}
+      className={className}
     >
       {children}
     </motion.div>

@@ -37,7 +37,7 @@ const GenericSection = () => {
             <Link href="/">Saiba mais</Link>
           </AnimateEntryOnScreen>
 
-          <AnimateEntryOnScreen animationType="fadeInFromBottom" delay={0.5}>
+          <AnimateEntryOnScreen animationType="fadeInFromBottom" delay={0.2}>
             <div className={styles.image}>
               <Image
                 src="/images/pages/home/portfolio-imagem.jpg"
@@ -56,7 +56,7 @@ const GenericSection = () => {
             <Link href="/">Saiba mais</Link>
           </AnimateEntryOnScreen>
 
-          <AnimateEntryOnScreen animationType="fadeInFromBottom" delay={1}>
+          <AnimateEntryOnScreen animationType="fadeInFromBottom" delay={0.4}>
             <div className={styles.image}>
               <Image
                 src="/images/pages/home/perfis-aluminio.jpg"

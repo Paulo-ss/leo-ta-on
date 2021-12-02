@@ -12,20 +12,13 @@ import PerfilPrateleiraIcon from "../../public/images/icones/prateleiras.svg";
 import TendenciasIcon from "../../public/images/icones/tendencias.svg";
 import PortfoliosIcon from "../../public/images/icones/portfolio.svg";
 import PerfisAluminioIcon from "../../public/images/icones/perfis.svg";
+import BlackBg from "../blackBg/BlackBg";
 
 interface Props {
   toggleNavbarMobile: () => void;
 }
 
 const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
-  // Função para fechar o menu mobile caso
-  // o usuário clique fora do menu
-  const handleClickOutside = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) {
-      toggleNavbarMobile();
-    }
-  };
-
   // Verificando pelo tamanho da tela, para caso o usuário
   // aumente o tamanho da tela enquanto o menu mobile esteja
   // aberto, ele fecha automaticamente
@@ -46,7 +39,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
   }, []);
 
   return (
-    <div className={styles.blackBg} onClick={handleClickOutside}>
+    <BlackBg closeBlackBg={toggleNavbarMobile}>
       {/* Botão para fechar a navbar mobile */}
       <button
         className={`${styles.closeNavBtn} shadow-lg`}
@@ -68,6 +61,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
           <NavbarMobileItem
             icon={<CatalogosIcon />}
             title="Catálogo de Produtos"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
               { title: "Catálogo de Perfis", href: "/" },
               {
@@ -86,6 +80,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
           <NavbarMobileItem
             icon={<ExperienciasIcon />}
             title="Experiências"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
               {
                 title: "Visite o simulador",
@@ -123,24 +118,27 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
           <NavbarMobileItem
             icon={<ArticuladoresIcon />}
             title="Articuladores"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Articuladores FGVTN", href: "/" },
-              { title: "Articuladores Blum", href: "/" },
+              { title: "Articuladores FGVTN", href: "/articuladores/fgvtn" },
+              { title: "Articuladores Blum", href: "/articuladores/blum" },
             ]}
           />
 
           <NavbarMobileItem
             icon={<GavetasIcon />}
             title="Gavetas"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Gavetas FGVTN", href: "/" },
-              { title: "Gavetas Blum", href: "/" },
+              { title: "Gavetas FGVTN", href: "/gavetas/fgvtn" },
+              { title: "Gavetas Blum", href: "/gavetas/blum" },
             ]}
           />
 
           <NavbarMobileItem
             icon={<PainelRipadoIcon />}
             title="Painel Ripado"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
               { title: "Painel Ripado Barreto", href: "/" },
               { title: "Painel Ripado Santa Luzia", href: "/" },
@@ -151,6 +149,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             icon={<PerfilPrateleiraIcon />}
             svgStroke={true}
             title="Perfil Prateleira"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
               { title: "Sistemas Perfil Prateleira", href: "/" },
             ]}
@@ -159,6 +158,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
           <NavbarMobileItem
             icon={<TendenciasIcon />}
             title="Tendências"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
               { title: "Tendências", href: "/" },
               { title: "Tendências", href: "/" },
@@ -169,6 +169,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
           <NavbarMobileItem
             icon={<PortfoliosIcon />}
             title="Portfolios MDF"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
               { title: "Portfolios MDF", href: "/" },
               { title: "Portfolios MDF", href: "/" },
@@ -179,6 +180,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
           <NavbarMobileItem
             icon={<PerfisAluminioIcon />}
             title="Perfis de Alumínio"
+            toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
               { title: "Perfis de Alumínio", href: "/" },
               { title: "Perfis de Alumínio", href: "/" },
@@ -187,7 +189,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
           />
         </ul>
       </motion.nav>
-    </div>
+    </BlackBg>
   );
 };
 

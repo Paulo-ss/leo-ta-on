@@ -4,7 +4,7 @@ import HomeCards from "../components/home/HomeCards";
 import HomeSubCards from "../components/home/HomeSubCards";
 import YoutubeChannel from "../components/home/YoutubeChannel";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <HomeBanner />
@@ -16,4 +16,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

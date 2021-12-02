@@ -2,23 +2,28 @@ import styles from "./SlideInMenuItem.module.css";
 import Link from "next/link";
 import { SlideInMenuItemObj } from "../../interfaces/Interfaces";
 
-const SlideInMenuItem: React.FC<SlideInMenuItemObj> = ({
+interface Props {
+  toggleNavbarMobile: () => void;
+}
+
+const SlideInMenuItem: React.FC<SlideInMenuItemObj & Props> = ({
   title,
   href,
   targetBlank,
+  toggleNavbarMobile,
 }) => {
   return (
     <>
       {targetBlank ? (
-        <div className={styles.slideInMenuItem}>
+        <li className={styles.slideInMenuItem} onClick={toggleNavbarMobile}>
           <a href={href} target="_blank">
             {title}
           </a>
-        </div>
+        </li>
       ) : (
-        <div className={styles.slideInMenuItem}>
+        <li className={styles.slideInMenuItem} onClick={toggleNavbarMobile}>
           <Link href={href}>{title}</Link>
-        </div>
+        </li>
       )}
     </>
   );

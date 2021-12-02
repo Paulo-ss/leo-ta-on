@@ -1,0 +1,49 @@
+.gavetasContainer {
+  padding: var(--spacing-7);
+  background-color: var(--black-2);
+}
+
+.gavetasHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--spacing-6);
+}
+
+.info span {
+  width: 2px;
+  height: 60px;
+  background-color: var(--orange);
+  margin: 0 var(--spacing-6);
+}
+
+.info p {
+  color: var(--white-2);
+  max-width: 40ch;
+}
+
+@media (max-width: 650px) {
+  .gavetasContainer {
+    padding: var(--spacing-6);
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info span {
+    display: none;
+  }
+
+  .info p {
+    margin-top: var(--spacing-6);
+  }
+}

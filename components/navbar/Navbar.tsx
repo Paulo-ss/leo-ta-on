@@ -19,7 +19,7 @@ import PerfilPrateleiraDropdown from "./dropdownContent/PerfilPrateleiraDropdown
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} shadow-sm`}>
       <Container>
         <ul className={styles.navbarNav}>
           <NavbarItem title="Catálogo de Produtos" icon={<CatalogosIcon />}>

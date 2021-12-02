@@ -36,7 +36,7 @@ const ArticuladoresDropdown = () => {
 
       <div className={styles.genericDropdownItem}>
         <span>Confira os produtos de cada fabricante</span>
-        <Link href="/">
+        <Link href="/articuladores/fgvtn">
           <a title="Acessar Articuladores FGVTN">
             <div className={styles.logo}>
               <Image
@@ -48,7 +48,7 @@ const ArticuladoresDropdown = () => {
             </div>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/articuladores/blum">
           <a title="Acessar Articuladores Blum">
             <div className={styles.logo}>
               <Image
