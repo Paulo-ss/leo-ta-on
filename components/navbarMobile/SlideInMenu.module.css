@@ -8,6 +8,8 @@
   flex-direction: column;
   align-items: flex-start;
 
+  list-style-type: none;
+
   background: var(--white-2);
 
   transform: translateX(100%);

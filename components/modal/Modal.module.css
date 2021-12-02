@@ -1,0 +1,10 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: clamp(50%, 700px, 90%);
+  margin: auto;
+  padding: var(--spacing-5);
+  background-color: var(--white-2);
+}

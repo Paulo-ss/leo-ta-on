@@ -21,7 +21,7 @@ const CatalogFlipbook: FC<Props> = ({
         </div>
       </Container>
 
-      <div className={`${styles.catalog} shadow-md`}>{children}</div>
+      {children}
     </section>
   );
 };

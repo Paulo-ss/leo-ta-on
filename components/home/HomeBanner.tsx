@@ -11,9 +11,10 @@ const HomeBanner = () => {
             <p>Bem vindo ao</p>
             <div className={styles.bannerLogo}>
               <Image
-                src="/images/pages/home/leo-ta-on.png"
+                src="/images/logos/leo-ta-on.png"
                 width="339"
                 height="150"
+                alt="Logo Leo Ta On"
               />
             </div>
             <h3>Todos os materiais promocionais em um só clique!</h3>
@@ -24,6 +25,7 @@ const HomeBanner = () => {
               src="/images/pages/home/compose-mac.png"
               width="747"
               height="335"
+              alt="Imagem com várias telas de computadores do portal Leo Ta On"
             />
           </div>
         </div>

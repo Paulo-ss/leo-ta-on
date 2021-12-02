@@ -34,7 +34,7 @@ const GavetasDropdown = () => {
 
       <div className={styles.genericDropdownItem}>
         <span>Confira os produtos de cada fabricante</span>
-        <Link href="/">
+        <Link href="/gavetas/fgvtn">
           <a title="Acessar Gavetas FGVTN">
             <div className={styles.logo}>
               <Image
@@ -46,7 +46,7 @@ const GavetasDropdown = () => {
             </div>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/gavetas/blum">
           <a title="Acessar Gavetas Blum">
             <div className={styles.logo}>
               <Image

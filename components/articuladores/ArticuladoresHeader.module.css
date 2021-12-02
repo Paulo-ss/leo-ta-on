@@ -1,0 +1,39 @@
+.articuladoresContainer {
+  padding: var(--spacing-7);
+  background-color: var(--white-5);
+}
+
+.articuladoresHeader {
+  display: grid;
+  grid-template-columns: minmax(380px, 1fr) 1fr;
+  gap: var(--spacing-5);
+  align-items: center;
+}
+
+.info p {
+  color: var(--text-color);
+  margin-left: 5.2rem;
+}
+
+.image {
+  justify-self: end;
+}
+
+@media (max-width: 740px) {
+  .articuladoresContainer {
+    padding: var(--spacing-4);
+  }
+
+  .articuladoresHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .info p {
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .image {
+    justify-self: center;
+  }
+}

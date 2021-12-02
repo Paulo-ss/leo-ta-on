@@ -11,15 +11,13 @@ const SlideInMenu: FC<Props> = ({
   children,
 }) => {
   return (
-    <div
-      className={`${styles.slideInMenu} ${openSlideInMenu && styles.opened}`}
-    >
+    <ul className={`${styles.slideInMenu} ${openSlideInMenu && styles.opened}`}>
       <div className={styles.slideInMenuHeader} onClick={toggleSlideInMenu}>
         <span>➜</span>
       </div>
 
       {children}
-    </div>
+    </ul>
   );
 };
 

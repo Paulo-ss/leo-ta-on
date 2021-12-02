@@ -6,12 +6,13 @@ import SlideInMenuItem from "./SlideInMenuItem";
 
 interface Props {
   icon: ReactNode;
+  title: string;
+  slideInMenuItems: SlideInMenuItemObj[];
+  toggleNavbarMobile: () => void;
   // svgStroke é uma prop boolean opcional que quando true,
   // aplica uma casse no ícone svg passado para estilizar
   // o stroke ao invés do fill para svg vazados
   svgStroke?: boolean;
-  title: string;
-  slideInMenuItems: SlideInMenuItemObj[];
 }
 
 const NavbarMobileItem: FC<Props> = ({
@@ -19,6 +20,7 @@ const NavbarMobileItem: FC<Props> = ({
   svgStroke,
   title,
   slideInMenuItems,
+  toggleNavbarMobile,
 }) => {
   // Estado para controlar o slide do menu
   const [openSlideInMenu, setOpenSlideInMenu] = useState(false);
@@ -54,6 +56,7 @@ const NavbarMobileItem: FC<Props> = ({
             title={item.title}
             href={item.href}
             targetBlank={item.targetBlank}
+            toggleNavbarMobile={toggleNavbarMobile}
           />
         ))}
       </SlideInMenu>

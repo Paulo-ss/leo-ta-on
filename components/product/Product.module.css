@@ -1,0 +1,217 @@
+.product {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) 1fr;
+  grid-template-areas: "info image";
+  gap: var(--spacing-5);
+  padding: var(--spacing-6);
+}
+
+/* Mudando a ordem para elementos par*/
+.product:nth-child(even) {
+  grid-template-columns: 1fr minmax(320px, 1fr);
+  grid-template-areas: "image info";
+}
+
+/* Estilos para quando for a página de articuladores */
+.product.articuladoresPalette {
+  background-color: var(--light-gray);
+  color: var(--black-2);
+}
+
+/* Estilos para quando for a página de gavetas */
+.product.gavetasPalette {
+  background-color: var(--brown-light);
+  color: var(--white-2);
+}
+
+/* Estilo para produtos em destaque */
+.product.featured {
+  background-color: var(--primary-color-light);
+  color: var(--white-2);
+}
+
+.product.featured .productInfo h3,
+.product.featured .productInfo h1 {
+  color: var(--white-2);
+}
+
+.product.featured .tableContainer th,
+.product.featured .tableContainer td,
+.product.gavetasPalette .tableContainer th,
+.product.gavetasPalette .tableContainer td {
+  border-bottom: 1px solid var(--white-2);
+}
+
+.product.featured .tableContainer table,
+.product.gavetasPalette .tableContainer table {
+  border-top: 1px solid var(--white-2);
+}
+
+/* Informações do produto */
+.productInfo {
+  grid-area: info;
+  padding: var(--spacing-5);
+  padding-top: 0;
+}
+
+/* Título e sub título do produto */
+.productInfo h3,
+.productInfo h1 {
+  color: var(--brown);
+}
+
+.productInfo h3 {
+  font-weight: 400;
+  max-width: 40ch;
+}
+
+.productInfo h1 {
+  font-size: var(--font-size-8);
+}
+
+/* Lista de features do produto */
+.productInfo ul {
+  margin-top: var(--spacing-5);
+  margin-left: var(--spacing-5);
+  line-height: 1.5;
+}
+
+/* Tabela com os códigos do produto */
+.productInfo .tableContainer {
+  margin-top: var(--spacing-6);
+  font-size: var(--font-size-3);
+  overflow-x: auto;
+}
+
+.productInfo .tableContainer table {
+  border-top: 1px solid var(--black-2);
+  border-collapse: collapse;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.productInfo .tableContainer table + table {
+  margin-top: var(--spacing-5);
+}
+
+.productInfo .tableContainer th,
+.productInfo .tableContainer td {
+  padding: var(--spacing-1);
+  border-bottom: 1px solid var(--black-2);
+  min-width: 100px;
+}
+
+/* As bordas das tabelas são diferentes quando
+a página for de gavetas */
+.product.gavetasPalette .productInfo .tableContainer th,
+.product.gavetasPalette .productInfo .tableContainer td {
+  border: 1px solid var(--white-2);
+}
+
+.productInfo .tableContainer td a {
+  color: var(--link-color);
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* A cor do link é diferente quando a página for de gavetas */
+.product.gavetasPalette .productInfo .tableContainer td a {
+  color: var(--link-color-dark);
+}
+
+.productInfo .tableContainer td a:hover,
+.productInfo .tableContainer td a:focus {
+  background-color: var(--link-color-light);
+}
+
+/* Botão para abrir o modal e assistir o vídeo */
+.productInfo .videoBtn {
+  display: flex;
+  align-items: center;
+  background-color: var(--white-1);
+  color: var(--text-color);
+  border: 2px solid transparent;
+  margin-top: var(--spacing-6);
+  padding: var(--spacing-2) var(--spacing-5);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.productInfo .videoBtn:hover,
+.productInfo .videoBtn:focus {
+  border-color: var(--black-2);
+}
+
+.productInfo .videoBtn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--brown-light);
+  margin-left: var(--spacing-5);
+}
+
+.productInfo .videoBtn span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid var(--white-1);
+}
+
+/* Imagem do produto */
+.productImage {
+  grid-area: image;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+  .product {
+    padding: var(--spacing-5);
+  }
+
+  .productInfo {
+    padding: 0;
+  }
+
+  .productInfo h1 {
+    font-size: var(--font-size-7);
+  }
+
+  .productInfo ul {
+    font-size: var(--font-size-4);
+  }
+}
+
+@media (max-width: 780px) {
+  .product {
+    grid-template-columns: unset;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .productInfo h3 {
+    font-size: var(--font-size-4);
+  }
+
+  .productInfo .tableContainer table {
+    overflow-x: auto;
+  }
+
+  .productInfo .tableContainer th,
+  .productInfo .tableContainer td {
+    min-width: 100px;
+  }
+
+  .productInfo .videoBtn {
+    padding: var(--spacing-1) var(--spacing-3);
+  }
+}

@@ -1,7 +1,7 @@
 import CatalogFlipbook from "../../components/catalog/CatalogFlipbook";
 import Head from "next/head";
 
-const CatalogoMaquinas = () => {
+const CatalogoMaquinasPage = () => {
   return (
     <>
       <Head>
@@ -34,4 +34,4 @@ const CatalogoMaquinas = () => {
   );
 };
 
-export default CatalogoMaquinas;
+export default CatalogoMaquinasPage;

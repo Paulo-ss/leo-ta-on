@@ -3,6 +3,7 @@ import { useState } from "react";
 import Container from "../layout/Container";
 import NavbarMobile from "../navbarMobile/NavbarMobile";
 import styles from "./Header.module.css";
+import Image from "next/image";
 import Link from "next/link";
 
 const Header: React.FC = () => {
@@ -14,13 +15,18 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`${styles.header} shadow-md`}>
+    <header className={`${styles.header} shadow-sm`}>
       <Container>
         <div className={styles.headerWrapper}>
           <div className={styles.logo}>
             <Link href="/">
               <a>
-                <h1>LEO TA ON</h1>
+                <Image
+                  src="/images/logos/leo-ta-on.png"
+                  width="339"
+                  height="150"
+                  alt="Logo Leo Ta On"
+                />
               </a>
             </Link>
           </div>
