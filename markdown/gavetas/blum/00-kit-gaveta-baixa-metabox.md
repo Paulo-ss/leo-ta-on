@@ -13,7 +13,7 @@ features:
   ]
 image:
   {
-    src: "gavetas/blum-g/kit-gaveta-baixa-metabox.png",
+    src: "gavetas/blum/kit-gaveta-baixa-metabox.png",
     alt: "Imagem com o Kit Gaveta Baixa Metabox aplicado",
   }
 ---

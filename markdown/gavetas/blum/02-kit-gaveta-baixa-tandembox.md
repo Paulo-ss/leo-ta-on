@@ -13,7 +13,7 @@ features:
   ]
 image:
   {
-    src: "gavetas/blum-g/kit-gaveta-baixa-tandembox.png",
+    src: "gavetas/blum/kit-gaveta-baixa-tandembox.png",
     alt: "Imagem com o Kit Gaveta Baixa Tandembox aplicado",
   }
 ---
