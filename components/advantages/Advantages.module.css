@@ -14,12 +14,13 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--orange-light);
+  letter-spacing: 0.2rem;
 }
 
 .text p::after {
   content: "!";
   position: absolute;
-  transform: translate3D(90px, -25px, 0px) rotate(15deg) scale(2.8);
+  transform: translate3D(110px, -25px, 0px) rotate(15deg) scale(2.8);
 }
 
 .logo {
@@ -27,7 +28,7 @@
   width: 200px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .advantagesContainer {
     padding: var(--spacing-5);
   }
@@ -43,11 +44,21 @@
   }
 
   .text p::after {
-    transform: translate3D(75px, -20px, 0px) rotate(15deg) scale(2.8);
+    transform: translate3D(95px, -20px, 0px) rotate(15deg) scale(2.8);
   }
 
   .logo {
     justify-self: center;
     width: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .text p {
+    font-size: 1.6rem;
+  }
+
+  .text p::after {
+    transform: translate3D(80px, -15px, 0px) rotate(15deg) scale(2.8);
   }
 }

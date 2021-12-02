@@ -85,6 +85,45 @@
   overflow-x: auto;
 }
 
+.productInfo .tableContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Estilizando a scrollbar da tabela para articuladores */
+.product.articuladoresPalette
+  .productInfo
+  .tableContainer::-webkit-scrollbar-track {
+  background: var(--white-1);
+}
+
+.product.articuladoresPalette
+  .productInfo
+  .tableContainer::-webkit-scrollbar-thumb {
+  background: var(--black-1);
+}
+
+.product.articuladoresPalette
+  .productInfo
+  .tableContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--black-4);
+}
+
+/* Estilizando a scrollbar da tabela para gavetas */
+.product.gavetasPalette .productInfo .tableContainer::-webkit-scrollbar-track {
+  background: var(--brown-medium);
+}
+
+.product.gavetasPalette .productInfo .tableContainer::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+}
+
+.product.gavetasPalette
+  .productInfo
+  .tableContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--brown);
+}
+
+/* Estilizando as tabelas */
 .productInfo .tableContainer table {
   border-top: 1px solid var(--black-2);
   border-collapse: collapse;
@@ -116,14 +155,19 @@ a página for de gavetas */
   transition: background-color 0.3s ease;
 }
 
-/* A cor do link é diferente quando a página for de gavetas */
-.product.gavetasPalette .productInfo .tableContainer td a {
-  color: var(--link-color-dark);
-}
-
 .productInfo .tableContainer td a:hover,
 .productInfo .tableContainer td a:focus {
   background-color: var(--link-color-light);
+}
+
+/* A cor do link é diferente quando a página for de gavetas */
+.product.gavetasPalette .productInfo .tableContainer td a {
+  color: var(--link-color-lighter);
+}
+
+.product.gavetasPalette .productInfo .tableContainer td a:hover,
+.product.gavetasPalette .productInfo .tableContainer td a:focus {
+  background-color: var(--link-color);
 }
 
 /* Botão para abrir o modal e assistir o vídeo */

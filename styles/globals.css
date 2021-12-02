@@ -56,12 +56,13 @@ a {
   --orange: hsl(25, 94%, 48%);
   --orange-light: hsl(46, 78%, 51%);
 
-  --brown: hsl(47, 62%, 13%);
   --brown-light: hsl(39, 30%, 57%);
+  --brown-medium: hsl(39, 24%, 48%);
+  --brown: hsl(47, 62%, 13%);
 
-  --link-color: #28a3c9;
+  --link-color-lighter: #b5e0ec;
   --link-color-light: #c6eaf5;
-  --link-color-dark: #1a7b99;
+  --link-color: #28a3c9;
 
   /* Fontes */
   --font-size-1: 0.625rem;
