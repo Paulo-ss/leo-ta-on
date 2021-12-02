@@ -15,6 +15,10 @@ button {
   font-size: 16px;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 a {
   display: block;
   color: inherit;

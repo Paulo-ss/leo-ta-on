@@ -63,10 +63,12 @@
 .productInfo h3 {
   font-weight: 400;
   max-width: 40ch;
+  line-height: 1.5;
 }
 
 .productInfo h1 {
   font-size: var(--font-size-8);
+  line-height: 1.2;
 }
 
 /* Lista de features do produto */
