@@ -6,7 +6,7 @@ const PerfilPrateleiraDropdown = () => {
   return (
     <div className={styles.perfilPrateleiraDropdown}>
       <div className={styles.perfilPrateleiraDropdownItem}>
-        <Link href="/">
+        <Link href="#">
           <a>
             <div className={styles.campaingLogo}>
               <Image

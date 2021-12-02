@@ -35,7 +35,7 @@ const PainelRipadoDropdown = () => {
 
       <div className={styles.genericDropdownItem}>
         <span>Confira os produtos de cada fabricante</span>
-        <Link href="/">
+        <Link href="#">
           <a title="Acessar Paineis Ripados Barreto">
             <div className={styles.logo} style={{ width: "100px" }}>
               <Image

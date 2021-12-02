@@ -1,7 +1,6 @@
 import Container from "../layout/Container";
 import styles from "./YoutubeChannel.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import AnimateEntryOnScreen from "../util/AnimateEntryOnScreen";
 
 const YoutubeChannel = () => {
@@ -20,16 +19,18 @@ const YoutubeChannel = () => {
             </div>
 
             <div className={styles.image}>
-              <Link href="/">
-                <a>
-                  <Image
-                    src="/images/pages/home/canal-youtube.png"
-                    width="257"
-                    height="125"
-                    alt="Visite o canal da Leo Madeiras no YouTube"
-                  />
-                </a>
-              </Link>
+              <a
+                href="https://www.youtube.com/channel/UCcytRsBD6dNhosoX6gpzEmA"
+                title="Visitar o canal Leo no YouTube"
+                target="_blank"
+              >
+                <Image
+                  src="/images/pages/home/canal-youtube.png"
+                  width="257"
+                  height="125"
+                  alt="Visite o canal da Leo Madeiras no YouTube"
+                />
+              </a>
             </div>
           </div>
         </Container>

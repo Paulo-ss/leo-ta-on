@@ -1,6 +1,5 @@
 import { FC, ReactNode, useState } from "react";
 import styles from "./NavbarItem.module.css";
-import Link from "next/link";
 import Dropdown from "./Dropdown";
 
 interface Props {
@@ -22,18 +21,16 @@ const NavbarItem: FC<Props> = ({ icon, svgStroke, title, children }) => {
       onMouseEnter={() => setIsDropdownOpen(true)}
       onMouseLeave={() => setIsDropdownOpen(false)}
     >
-      <Link href="/">
-        <a>
-          <span
-            className={`${styles.icon} ${
-              svgStroke ? styles.strokeIcon : styles.fillIcon
-            }`}
-          >
-            {icon}
-          </span>
-          <p>{title}</p>
-        </a>
-      </Link>
+      <a href="#">
+        <span
+          className={`${styles.icon} ${
+            svgStroke ? styles.strokeIcon : styles.fillIcon
+          }`}
+        >
+          {icon}
+        </span>
+        <p>{title}</p>
+      </a>
 
       {/* Renderizando o dropdown */}
       {isDropdownOpen && <Dropdown>{children}</Dropdown>}

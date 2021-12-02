@@ -133,7 +133,7 @@ const HomeSubCards = () => {
               </p>
 
               <div className={styles.logos}>
-                <Link href="/">
+                <Link href="#">
                   <a>
                     <Image
                       src="/images/logos/santa-luzia.png"
@@ -144,7 +144,7 @@ const HomeSubCards = () => {
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                   <a>
                     <Image
                       src="/images/logos/barreto.jpg"

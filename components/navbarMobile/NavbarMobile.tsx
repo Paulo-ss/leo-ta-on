@@ -63,7 +63,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             title="Catálogo de Produtos"
             toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Catálogo de Perfis", href: "/" },
+              { title: "Catálogo de Perfis", href: "#" },
               {
                 title: "Catálogo de Máquinas",
                 href: "/catalogos/catalogo-de-maquinas",
@@ -72,8 +72,8 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
                 title: "Catálogo de Ferragens",
                 href: "/catalogos/catalogo-de-ferragens",
               },
-              { title: "Catálogo Marca Própria", href: "/" },
-              { title: "Catálogo de Adesivos", href: "/" },
+              { title: "Catálogo Marca Própria", href: "#" },
+              { title: "Catálogo de Adesivos", href: "#" },
             ]}
           />
 
@@ -140,8 +140,8 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             title="Painel Ripado"
             toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Painel Ripado Barreto", href: "/" },
-              { title: "Painel Ripado Santa Luzia", href: "/" },
+              { title: "Painel Ripado Barreto", href: "#" },
+              { title: "Painel Ripado Santa Luzia", href: "#" },
             ]}
           />
 
@@ -151,7 +151,7 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             title="Perfil Prateleira"
             toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Sistemas Perfil Prateleira", href: "/" },
+              { title: "Sistemas Perfil Prateleira", href: "#" },
             ]}
           />
 
@@ -160,9 +160,9 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             title="Tendências"
             toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Tendências", href: "/" },
-              { title: "Tendências", href: "/" },
-              { title: "Tendências", href: "/" },
+              { title: "Tendências", href: "#" },
+              { title: "Tendências", href: "#" },
+              { title: "Tendências", href: "#" },
             ]}
           />
 
@@ -171,9 +171,9 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             title="Portfolios MDF"
             toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Portfolios MDF", href: "/" },
-              { title: "Portfolios MDF", href: "/" },
-              { title: "Portfolios MDF", href: "/" },
+              { title: "Portfolios MDF", href: "#" },
+              { title: "Portfolios MDF", href: "#" },
+              { title: "Portfolios MDF", href: "#" },
             ]}
           />
 
@@ -182,9 +182,9 @@ const NavbarMobile: FC<Props> = ({ toggleNavbarMobile }) => {
             title="Perfis de Alumínio"
             toggleNavbarMobile={toggleNavbarMobile}
             slideInMenuItems={[
-              { title: "Perfis de Alumínio", href: "/" },
-              { title: "Perfis de Alumínio", href: "/" },
-              { title: "Perfis de Alumínio", href: "/" },
+              { title: "Perfis de Alumínio", href: "#" },
+              { title: "Perfis de Alumínio", href: "#" },
+              { title: "Perfis de Alumínio", href: "#" },
             ]}
           />
         </ul>

@@ -13,7 +13,7 @@ features:
   ]
 image:
   {
-    src: "gavetas/blum/kit-gaveta-embutida-alta-tandembox.png",
+    src: "gavetas/blum-g/kit-gaveta-embutida-alta-tandembox.png",
     alt: "Imagem com o Kit Gaveta Embutida Alta Tandembox aplicado",
   }
 ---

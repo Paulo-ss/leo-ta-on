@@ -16,7 +16,7 @@ const HomeCards = () => {
               subTitle:
                 "Todos os materiais institucionais a um só clique de você!",
               text: "Tenha acesso aos nossos catálogos de produtos, folheto tendências e uma amplitude de materiais agregando valor",
-              href: "/",
+              href: "#",
               imageProps: {
                 src: "pages/home/catalogos-digitais.png",
                 width: "516",
@@ -30,7 +30,7 @@ const HomeCards = () => {
               subTitle:
                 "Todos os materiais institucionais a um só clique de você!",
               text: "Tenha acesso aos nossos catálogos de produtos, folheto tendências e uma amplitude de materiais agregando valor",
-              href: "/",
+              href: "#",
               imageProps: {
                 src: "pages/home/cozinha.png",
                 width: "516",

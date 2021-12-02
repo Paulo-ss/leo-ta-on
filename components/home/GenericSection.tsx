@@ -34,7 +34,7 @@ const GenericSection = () => {
               Todos os materiais institucionais a um só clique de você! Tenha
               acesso aos nossos catálogos de produtos, folheto tendências.
             </p>
-            <Link href="/">Saiba mais</Link>
+            <Link href="#">Saiba mais</Link>
           </AnimateEntryOnScreen>
 
           <AnimateEntryOnScreen animationType="fadeInFromBottom" delay={0.2}>
@@ -53,7 +53,7 @@ const GenericSection = () => {
               Todos os materiais institucionais a um só clique de você! Tenha
               acesso aos nossos catálogos de produtos, folheto tendências.
             </p>
-            <Link href="/">Saiba mais</Link>
+            <Link href="#">Saiba mais</Link>
           </AnimateEntryOnScreen>
 
           <AnimateEntryOnScreen animationType="fadeInFromBottom" delay={0.4}>
@@ -72,7 +72,7 @@ const GenericSection = () => {
               Todos os materiais institucionais a um só clique de você! Tenha
               acesso aos nossos catálogos de produtos, folheto tendências.
             </p>
-            <Link href="/">Saiba mais</Link>
+            <Link href="#">Saiba mais</Link>
           </AnimateEntryOnScreen>
         </div>
       </Container>
